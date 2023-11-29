@@ -14,28 +14,23 @@ class PerIR(Dataset):
             self.matching_dict = json.load(f)
         
         dummy_dict = {}
+        self.perir = []
 
         for sample in self.gt_data:
             for field, answer in sample['answers']:
                 topic = find_matching_topic(field, self.matching_dict, 5)
                 user_reddit_list = self.interest_data[topic]
                 for user_reddit in user_reddit_list:
-                    dummy_dict['query'] =
-                    dummy_dict['user_reddit'] = 
-                    dummy_dict['gt_answer'] = 
-        self.queries = [item['query'] for item in self.gt_data]
-        self.user_samples = {field: [sample[field] for sample in interest_data] 
-                             for field, interest_data in self.interest_data.items()}
+                    dummy_dict['query'] = sample['query']
+                    dummy_dict['user_reddit'] = user_reddit
+                    dummy_dict['gt_answer'] = answer
+                    self.perir.append(dummy_dict)
 
     def __len__(self):
-        return len(self.gt_data)
+        return len(self.perir)
 
-    def __getitem__(self, index):
-        query = self.queries[index]
-        user_samples = {field: self.user_samples[field][index] for field in self.user_samples}
-        ground_truth = self.gt_data[index]['answers']
-        
-        return {'query': query, 'user_samples': user_samples, 'ground_truth': ground_truth}
+    def __getitem__(self, index):        
+        return self.perir[index]
     
 if __name__ == "__main__":
     gt_file_path = './data/gt.json'
@@ -43,9 +38,9 @@ if __name__ == "__main__":
     matching_path = './data/subreddit_topic.json'
 
     dataset = PerIR(gt_file_path, interest_file_path, matching_path)
-    dataloader = DataLoader(dataset, batch_size=1, shuffle=True)
+    dataloader = DataLoader(dataset, batch_size=1, shuffle=False)
 
     for batch in dataloader:
         query = batch['query']
-        user_samples = batch['user_samples']
-        ground_truth = batch['ground_truth']
+        user_reddit = batch['user_reddit']
+        gt_answer = batch['gt_answer']
