@@ -42,11 +42,22 @@ The crawled data is provided in `./data/polyseme_wiki.json`, and can be done by 
 python wiki_crawling.py
 ```
 
+KKKKKKKKKKKKKKKKKK
+
+
+Now, you need to match each answers to a subreddit to get an user interest data (reddit posts of a user).
+
+```shell
+python crawl.py
+```
+This is based on the [reddit API](https://praw.readthedocs.io/en/stable/code_overview/reddit/subreddits.html)
 
 
 
 Evaluation
 ----------------------
+
+
 This Python script allows you to evaluate text metrics between predicted and ground truth files. It supports various metrics such as BLEU, METEOR, ROUGE, Google BLEU, and BERTScore.
 
 ```shell
