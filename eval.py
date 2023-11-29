@@ -6,8 +6,8 @@ import json
 import statistics
 
 parser = argparse.ArgumentParser()
-parser.add_argument('pred_filepath', type=str)
-parser.add_argument('gt_filepath', type=str)
+parser.add_argument('--pred_filepath', type=str, default='./data/gt.json')
+parser.add_argument('--gt_filepath', type=str, default='./data/predictions/pred.json')
 parser.add_argument('--metric', default='all', 
     choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'])
 parser.add_argument('--format', default='json', choices=['txt', 'json'])
@@ -53,25 +53,25 @@ def print_result(data):
     pprint.pprint(result)
     print ("*" * 80)
 
-def get_sents():
+def get_sents(pred_filepath = args.pred_filepath, gt_filepath = args.gt.filepath, format = args.format):
     pred_sents = []
     gt_sents = []
 
-    if args.format == 'txt':
-        with open(args.pred_filepath, "r") as f:
+    if format == 'txt':
+        with open(pred_filepath, "r") as f:
             lines = f.readlines()
             for line in lines:
                 pred_sents.append(line.replace("\n", ""))
 
-        with open(args.gt_filepath, "r") as f:
+        with open(gt_filepath, "r") as f:
             lines = f.readlines()
             for line in lines:
                 gt_sents.append(line.replace("\n", ""))
 
-    elif args.format == 'json':
-        with open(args.pred_filepath, "r") as f_pred:
+    elif format == 'json':
+        with open(pred_filepath, "r") as f_pred:
             data_pred = json.load(f_pred) #list of dict
-            with open(args.gt_filepath, "r") as f_gt:
+            with open(gt_filepath, "r") as f_gt:
                 data_gt = json.load(f_gt)
                 for i, sample in enumerate(data_pred):
                     for field,sents in sample['answers'].items():
@@ -82,7 +82,7 @@ def get_sents():
     return pred_sents, gt_sents
 
 if __name__ == "__main__":
-    pred_sents, gt_sents = get_sents()
+    pred_sents, gt_sents = get_sents(args.pred_filepath, args.gt.filepath, args.format)
 
     if args.metric == "all": 
         print_result(eval_bertscore(pred_sents, gt_sents))

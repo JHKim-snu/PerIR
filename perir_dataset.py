@@ -24,6 +24,8 @@ class PerIR(Dataset):
                     dummy_dict['query'] = sample['query']
                     dummy_dict['user_reddit'] = user_reddit
                     dummy_dict['gt_answer'] = answer
+                    dummy_dict['field'] = field
+                    dummy_dict['polyseme'] = sample['polyseme']
                     self.perir.append(dummy_dict)
 
     def __len__(self):
