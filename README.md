@@ -9,9 +9,40 @@
 A dataset for Personalized Information Retrieval (PerIR)
 
 
+Environment Setup
+----------------------
+Python 3.7+, Anaconda/Miniconda (recommended) <br>
+
+1. Install Anaconda or Miniconda from [here][8].
+2. Clone this repository and create an environment:
+
+```shell
+git clone https://www.github.com/JHKim-snu/PerIR
+conda create -n perir python=3.8
+conda activate perir
+```
+
+3. Install all dependencies:
+```shell
+pip install -r requirements.txt
+```
+
+
 Building a dataset
 ----------------------
 <span style="color:red">You can skip this part if you only want to use the dataset.</span>
+
+First, you need a list of polysemes in a `.tsv` format.
+The polyseme we constructed can be found in `./data/polyseme.tsv`.
+
+Then, we crawl the fields and meanings of every polyseme from Wikipedia.
+The crawled data is provided in `./data/polyseme_wiki.json`, and can be done by following the script:
+
+```shell
+python wiki_crawling.py
+```
+
+
 
 
 Evaluation
