@@ -24,7 +24,9 @@ def summarizer(user_reddit):
     
     return summary
 
+
 def answerer(summary, query):
+
     problem_def = "Based on the user's interest given as following:\n"
     role = "Answer the following question:\n"
     condition = "Tell me briefly within two sentences."
@@ -33,7 +35,38 @@ def answerer(summary, query):
         model=model,
         messages=[{"role": "user", "content": prompt}]
     )
+
     answer = response['choices'][0]['message']['content']
+    
+    return answer
+
+
+def general(query): # model that only uses query
+    
+    condition = "Tell me briefly within two sentences."
+    prompt = query + condition
+
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    answer = response['choices'][0]['message']['content']    
+    
+    return answer
+
+
+def literal(user_reddit, query): # model that uses raw reddit data
+
+    condition = "Tell me briefly within two sentences."
+    prompt = user_reddit + query + condition
+
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    answer = response['choices'][0]['message']['content']    
     
     return answer
 
@@ -46,6 +79,7 @@ if __name__ == "__main__":
     parser.add_argument('--pred_filepath', type=str, default='./data/gt.json')
     parser.add_argument('--gt_filepath', type=str, default='./data/predictions/pred.json')    
     parser.add_argument('--format', default='json', choices=['txt', 'json'])
+    parser.add_argument('--model', type=str, default='perir', choices=['perir','general','literal'])
     args = parser.parse_args()
 
     OPENAI_API_KEY = "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"
@@ -77,8 +111,14 @@ if __name__ == "__main__":
             gt_answer = batch['gt_answer']
             field = batch['field']
 
-            summary = summarizer(user_reddit=user_reddit)
-            pred = answerer(summary, query)
+            if args.model == 'perir':
+                summary = summarizer(user_reddit=user_reddit)
+                pred = answerer(summary, query)
+            elif args.model == 'general':
+                pred = general(query)
+            elif args.model == 'literal':
+                pred = literal(user_reddit, query)
+
             temp_dict['polyseme'] = batch['polyseme']
             temp_dict['query'] = query
             try:
@@ -98,7 +138,7 @@ if __name__ == "__main__":
         with open(args.pred_filepath, 'w') as f:
             json.dump(save_data, f)
 
-        print("{} dictionaries (queries) saved to {}".format(len(save_data), args.pred_filepath))
+        print("{} model: {} dictionaries (queries) saved to {}".format(args.model, len(save_data), args.pred_filepath))
 
         if args.eval_mode:
             pred_sents, gt_sents = get_sents(args.pred_filepath, args.gt.filepath, args.format)
