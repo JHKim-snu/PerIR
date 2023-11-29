@@ -5,6 +5,8 @@ from perir_dataset import PerIR
 from torch.utils.data import Dataset, DataLoader
 import argparse
 from eval import *
+import os
+
 
 def summarizer(user_reddit):
     
@@ -77,7 +79,7 @@ if __name__ == "__main__":
     parser.add_argument('--save_results', type=bool, default=True)
     parser.add_argument('--eval_mode', type=bool, default=True)
     parser.add_argument('--pred_filepath', type=str, default='./data/gt.json')
-    parser.add_argument('--gt_filepath', type=str, default='./data/predictions/pred.json')    
+    parser.add_argument('--gt_filepath', type=str, default='./data/predictions/')    
     parser.add_argument('--format', default='json', choices=['txt', 'json'])
     parser.add_argument('--model', type=str, default='perir', choices=['perir','general','literal'])
     args = parser.parse_args()
@@ -134,7 +136,9 @@ if __name__ == "__main__":
 
             if i == len(dataset)-1:
                 save_data.append(pre_dict)
-
+        
+        file_name = "pred_" + args.model + ".json"
+        save_file_path = os.path.join(args.pred_filepath, file_name)
         with open(args.pred_filepath, 'w') as f:
             json.dump(save_data, f)
 
