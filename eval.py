@@ -2,18 +2,24 @@ import os
 import argparse
 import pprint
 from evaluate import load
+import json
+import statistics
 
 parser = argparse.ArgumentParser()
 parser.add_argument('pred_filepath', type=str)
 parser.add_argument('gt_filepath', type=str)
 parser.add_argument('--metric', default='all', 
     choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'])
+parser.add_argument('--format', default='json', choices=['txt', 'json'])
 args = parser.parse_args()
 
 def eval_bertscore(pred_sents, gt_sents):
     bertscore = load("bertscore")
     result = bertscore.compute(predictions=pred_sents, 
         references=gt_sents, lang="en")
+    result_f1 = statistics.mean(result['f1'])
+    result_prec = statistics.mean(result['precision'])
+    result_recall = statistics.mean(result['recall'])
     return "bertscore", result
 
 def eval_bleu(pred_sents, gt_sents):
@@ -50,15 +56,26 @@ def get_sents():
     pred_sents = []
     gt_sents = []
 
-    with open(args.pred_filepath, "r") as f:
-        lines = f.readlines()
-        for line in lines:
-            pred_sents.append(line.replace("\n", ""))
+    if args.format == 'txt':
+        with open(args.pred_filepath, "r") as f:
+            lines = f.readlines()
+            for line in lines:
+                pred_sents.append(line.replace("\n", ""))
 
-    with open(args.gt_filepath, "r") as f:
-        lines = f.readlines()
-        for line in lines:
-            gt_sents.append(line.replace("\n", ""))
+        with open(args.gt_filepath, "r") as f:
+            lines = f.readlines()
+            for line in lines:
+                gt_sents.append(line.replace("\n", ""))
+
+    elif args.format == 'json':
+        with open(args.pred_filepath, "r") as f_pred:
+            data_pred = json.load(f_pred) #list of dict
+            with open(args.gt_filepath, "r") as f_gt:
+                data_gt = json.load(f_gt)
+                for i, sample in enumerate(data_pred):
+                    for field,sents in sample['answers'].items():
+                        pred_sents.append(sents.replace("\n", ""))
+                        gt_sents.append(data_gt[i]['answers'][field])
 
     return pred_sents, gt_sents
 

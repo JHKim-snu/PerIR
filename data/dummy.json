@@ -1,0 +1,12 @@
+[
+    {
+    “query”: {Query},
+    “polyseme”: {polyseme}, 
+    “answers” : {
+            {field1}: {answer1},
+            {field2}: {answer2},
+            ...
+        }
+    }, 
+    ...
+]
