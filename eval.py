@@ -20,6 +20,7 @@ def eval_bertscore(pred_sents, gt_sents):
     result_f1 = statistics.mean(result['f1'])
     result_prec = statistics.mean(result['precision'])
     result_recall = statistics.mean(result['recall'])
+    result = {'f1':result_f1, 'precision':result_prec, 'recall':result_recall}
     return "bertscore", result
 
 def eval_bleu(pred_sents, gt_sents):
@@ -74,8 +75,9 @@ def get_sents():
                 data_gt = json.load(f_gt)
                 for i, sample in enumerate(data_pred):
                     for field,sents in sample['answers'].items():
-                        pred_sents.append(sents.replace("\n", ""))
-                        gt_sents.append(data_gt[i]['answers'][field])
+                        for sent in sents:
+                            pred_sents.append(sent.replace("\n", " "))
+                            gt_sents.append(data_gt[i]['answers'][field].replace("\n", " "))
 
     return pred_sents, gt_sents
 

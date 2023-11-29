@@ -9,12 +9,17 @@
 A dataset for Personalized Information Retrieval (PerIR)
 
 
+Building a dataset
+----------------------
+<span style="color:red">You can skip this part if you only want to use the dataset.</span>
+
+
 Evaluation
 ----------------------
 This Python script allows you to evaluate text metrics between predicted and ground truth files. It supports various metrics such as BLEU, METEOR, ROUGE, Google BLEU, and BERTScore.
 
 ```shell
-python eval.py [-h] [—metric {all,bertscore,bleu,meteor,rouge,google_bleu}] pred_filepath gt_filepath
+python eval.py —-metric all ./data/pred.json ./data/gt.json
 ```
 
 - `pred_filepath`: Path to the file containing predicted text.
@@ -22,7 +27,7 @@ python eval.py [-h] [—metric {all,bertscore,bleu,meteor,rouge,google_bleu}] pr
 - `--metric`: Specify the metric to use for evaluation (default: all). Choose from 'all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'.
 - `--format`: Supports `.txt` format or `.json` format. For `.txt` format, each line should contain sentences of each samples. `.json` format consists of a list of dictionaries as examplified below:
 
-for ground truth
+**for ground truth data**
 <pre>
 [
     {
@@ -38,4 +43,20 @@ for ground truth
 ]
 </pre>
 
-for prediction
+**for prediction data**
+<pre>
+[
+    {
+    “query”: {Query},
+    “polyseme”: {polyseme}, 
+    “answers” : {
+            {field1}: [{answer1-1}, {answer1-2}, ...],
+            {field2}: [{answer2-1}, {answer2-2}, ...],
+            ...
+        }
+    }, 
+    ...
+]
+</pre>
+
+
