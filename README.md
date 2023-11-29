@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 
-Building a dataset
+How to Build PerIR
 ----------------------
 <span style="color:red">You can skip this part if you only want to use the dataset.</span>
 
@@ -48,7 +48,7 @@ KKKKKKKKKKKKKKKKKK
 Now, you need to match each answers to a subreddit to get an user interest data (reddit posts of a user).
 
 ```shell
-python crawl.py
+python subreddit2topic.py
 ```
 This is based on the [reddit API](https://praw.readthedocs.io/en/stable/code_overview/reddit/subreddits.html)
 

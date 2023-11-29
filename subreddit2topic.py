@@ -51,4 +51,6 @@ if __name__ == "__main__":
 
     topic = find_matching_topic(wikipedia_section, matching_dict, 5)
 
+    print(topic)
+
     
