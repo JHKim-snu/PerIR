@@ -4,14 +4,16 @@ import pprint
 from evaluate import load
 import json
 import statistics
+import openai
+from baseline import *
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--pred_filepath', type=str, default='./data/gt.json')
-parser.add_argument('--gt_filepath', type=str, default='./data/predictions/pred.json')
-parser.add_argument('--metric', default='all', 
-    choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'])
-parser.add_argument('--format', default='json', choices=['txt', 'json'])
-args = parser.parse_args()
+# parser = argparse.ArgumentParser()
+# parser.add_argument('--pred_filepath', type=str, default='./data/gt.json')
+# parser.add_argument('--gt_filepath', type=str, default='./data/predictions/pred.json')
+# parser.add_argument('--metric', default='all', 
+#     choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'])
+# parser.add_argument('--format', default='json', choices=['txt', 'json'])
+# args = parser.parse_args()
 
 def eval_bertscore(pred_sents, gt_sents):
     bertscore = load("bertscore")
@@ -45,6 +47,41 @@ def eval_google_bleu(pred_sents, gt_sents):
     result = google_bleu.compute(predictions=pred_sents, references=gt_sents)
     return "google_bleu", result
 
+
+def eval_gpt(pred_sents, gt_sents):
+    with open('./personal_info/openai_key.txt','r') as f:
+        OPENAI_API_KEY = f.readline()
+
+    openai.api_key = OPENAI_API_KEY
+
+    model = "gpt-3.5-turbo"
+
+    roll = "How well are the information presented in Text1 and Text2 aligned?\n\n"
+    output_format = "Give me a number between 1 (not aligned) to 5 (well aligned)."
+
+    scores = []
+
+    for i, pred_sent in enumerate(pred_sents):
+        prompt = roll + "Text1:\n" + pred_sents + "\n\n" + "Text2:\n" + gt_sents + "\n\n" + output_format
+
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=[{"role": "user", "content": prompt}]
+        )
+
+        answer = response['choices'][0]['message']['content']
+
+        try:
+            if 0<int(answer)<6:
+                scores.append(int(answer))
+        except:
+            print("gpt output is not in int format!")
+        
+    score = sum(scores)/len(scores)*100
+    
+    return "gpt_score (%)", score   
+
+
 def print_result(data):
     metric, result = data
     print ("")
@@ -53,7 +90,7 @@ def print_result(data):
     pprint.pprint(result)
     print ("*" * 80)
 
-def get_sents(pred_filepath = args.pred_filepath, gt_filepath = args.gt.filepath, format = args.format):
+def get_sents(pred_filepath, gt_filepath = args.gt_filepath, format = args.format):
     pred_sents = []
     gt_sents = []
 
@@ -82,7 +119,7 @@ def get_sents(pred_filepath = args.pred_filepath, gt_filepath = args.gt.filepath
     return pred_sents, gt_sents
 
 if __name__ == "__main__":
-    pred_sents, gt_sents = get_sents(args.pred_filepath, args.gt.filepath, args.format)
+    pred_sents, gt_sents = get_sents(args.pred_filepath, args.gt_filepath, args.format)
 
     if args.metric == "all": 
         print_result(eval_bertscore(pred_sents, gt_sents))
@@ -90,6 +127,7 @@ if __name__ == "__main__":
         print_result(eval_meteor(pred_sents, gt_sents))
         print_result(eval_rouge(pred_sents, gt_sents))
         print_result(eval_google_bleu(pred_sents, gt_sents))
+        print_result(eval_gpt(pred_sents, gt_sents))
 
     elif args.metric == "bertscore":
         print_result(eval_bertscore(pred_sents, gt_sents))

@@ -2,13 +2,16 @@ import praw
 import json
 
 def find_matching_subreddits(section_name, top_n):
-    # Replace 'YOUR_CLIENT_ID', 'YOUR_CLIENT_SECRET', 'YOUR_USER_AGENT', 'YOUR_USERNAME', and 'YOUR_PASSWORD'
+    
+    with open('./personal_info/reddit.json', 'r') as f:
+        reddit_id = json.load(f)
+    
     reddit = praw.Reddit(
-        client_id='hLAu4IE_qw8sS1aBUX0Zww',
-        client_secret='5AxBtnM7BdmxmZ8gu-sKg00gIs34DA',
-        user_agent='monhoney-agent',
-        username='monhoney',
-        password='bi1847!!'
+        client_id=reddit_id['client_id'],
+        client_secret=reddit_id['client_secret'],
+        user_agent=reddit_id['user_agent'],
+        username=reddit_id['username'],
+        password=reddit_id['password']
     )
 
     # print(f"Searching for subreddits related to: {section_name}")
@@ -19,12 +22,12 @@ def find_matching_subreddits(section_name, top_n):
     subreddit_names = [subreddit.display_name.lower() for subreddit in subreddits]
 
     if len(subreddit_names)>top_n:
-        return subreddit_names[:top_n]
+        return subreddit_names[:top_n], True
     else:
-        return subreddit_names
+        return subreddit_names, False
 
 def find_matching_topic(wikipedia_section, matching_dict, top_n):
-    subreddit_names = find_matching_subreddits(wikipedia_section, top_n)
+    subreddit_names, more_than_topn = find_matching_subreddits(wikipedia_section, top_n)
     topic_list = []
     for subreddit in subreddit_names:
         if subreddit in matching_dict.keys():
@@ -32,11 +35,13 @@ def find_matching_topic(wikipedia_section, matching_dict, top_n):
         else:
             continue
     
-    if len(topic_list) == 0:
-        find_matching_topic(wikipedia_section, matching_dict, top_n=top_n+5)
-
+    if (len(topic_list) == 0):
+        if more_than_topn:
+            return find_matching_topic(wikipedia_section, matching_dict, top_n=top_n+5)
+        else:
+            return "", "False"
     else:
-        return max(set(topic_list), key=topic_list.count)
+        return max(set(topic_list), key=topic_list.count), "True"
     
 
 if __name__ == "__main__":

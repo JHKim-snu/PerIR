@@ -3,7 +3,7 @@ from torch.utils.data import Dataset, DataLoader
 from subreddit2topic import find_matching_topic
 
 class PerIR(Dataset):
-    def __init__(self, gt_file, interest_file, matching_path):
+    def __init__(self, gt_file, interest_file, matching_path, toy):
         with open(gt_file, 'r') as f:
             self.gt_data = json.load(f)
         
@@ -17,16 +17,25 @@ class PerIR(Dataset):
         self.perir = []
 
         for sample in self.gt_data:
-            for field, answer in sample['answers']:
-                topic = find_matching_topic(field, self.matching_dict, 5)
-                user_reddit_list = self.interest_data[topic]
+            for field, answer in sample['answer'].items():
+                topic, valid = find_matching_topic(field, self.matching_dict, 5)
+                if valid == "False":
+                    continue
+                try:
+                    user_reddit_list = self.interest_data[topic]
+                except:
+                    continue
                 for user_reddit in user_reddit_list:
                     dummy_dict['query'] = sample['query']
-                    dummy_dict['user_reddit'] = user_reddit
+                    dummy_dict['user_reddit'] = user_reddit # list of postings
                     dummy_dict['gt_answer'] = answer
                     dummy_dict['field'] = field
                     dummy_dict['polyseme'] = sample['polyseme']
                     self.perir.append(dummy_dict)
+                    if len(self.perir)%100 == 0:
+                        print("Loading PerIR Dataset ... {}".format(len(self.perir)))
+            # if toy=="1":
+            #     break
 
     def __len__(self):
         return len(self.perir)
@@ -39,7 +48,7 @@ if __name__ == "__main__":
     interest_file_path = './data/reddit_interest.json'
     matching_path = './data/subreddit_topic.json'
 
-    dataset = PerIR(gt_file_path, interest_file_path, matching_path)
+    dataset = PerIR(gt_file_path, interest_file_path, matching_path, False)
     dataloader = DataLoader(dataset, batch_size=1, shuffle=False)
 
     for batch in dataloader:
