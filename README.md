@@ -2,7 +2,7 @@
 
 <h1>PerIR: Personalized Information Retrieval</h1>
 
-**[Junghyun Kim][1], &nbsp; [Suyeon Shin][2], &nbsp; ** <br>
+**[Junghyun Kim][1], &nbsp; [Suyeon Shin][2], &nbsp; [Moonhoen Lee][3], &nbsp; [Sujin jeon][4], &nbsp; [Jiseong Chung][5]** <br>
 
 </div>
 
@@ -19,16 +19,14 @@ Using PerIR is simple:
 git clone https://www.github.com/JHKim-snu/PerIR
 ```
 
-```shell
-python perir_dataset.py
-```
-
-or just simply import `PerIR` from `perir_dataset`
+Simply import `PerIR` from `perir_dataset`
 
 ```python
 from perir_dataset import PerIR
+
 perir = PerIR('./data/gt.json', './data/reddit_interest.json', "", None, './data/gt2topic.json')
 ```
+
 
 
 Environment Setup
@@ -126,6 +124,6 @@ python eval.py —-metric all ./data/pred.json ./data/gt.json
 
 [1]: https://jhkim-snu.github.io/
 [2]: https://github.com/suyeonshin/
-[3]:
-[4]:
-[5]:  
+[3]: https://github.com/monhoney
+[4]: https://github.com/vsujinv
+[5]: https://github.com/CHUNG-JiSeong

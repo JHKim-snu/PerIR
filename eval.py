@@ -49,7 +49,7 @@ def eval_google_bleu(pred_sents, gt_sents):
 
 
 def eval_gpt(pred_sents, gt_sents):
-    with open('./personal_info/openai_key.txt','r') as f:
+    with open('./personal_info/openai_key_sy.txt','r') as f:
         OPENAI_API_KEY = f.readline()
 
     openai.api_key = OPENAI_API_KEY

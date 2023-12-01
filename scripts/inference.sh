@@ -2,7 +2,6 @@
 
 # The port for communication. Note that if you want to run multiple tasks on the same machine,
 # you need to specify different port numbers.
-export MASTER_PORT=6055
 
 log_dir=./logs
 pred_filepath=./data/predictions/
@@ -20,7 +19,6 @@ echo "log_dir "${log_file}
 
 
 python ./baseline.py \
-    $data \
     --pred_filepath=${pred_filepath} \
     --gt_filepath=${pred_filepath} \
     --model=${model} > ${log_file} 2>&1

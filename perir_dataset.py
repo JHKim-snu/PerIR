@@ -27,7 +27,7 @@ class PerIR(Dataset):
                     topic, valid = find_matching_topic(field, self.matching_dict, 5)
                 except:
                     topic, valid = self.gt2topic_data[field]
-                    
+
                 if valid == "False":
                     print("no matching field for {}".format(field))
                     continue
@@ -44,8 +44,8 @@ class PerIR(Dataset):
                     dummy_dict['polyseme'] = sample['polyseme']
                     dummy_dict['index'] = idx
                     self.perir.append(dummy_dict)
-                    if len(self.perir)%100 == 0:
-                        print("Loading PerIR Dataset ... {}".format(len(self.perir)))
+                    # if len(self.perir)%100 == 0:
+                        # print("Loading PerIR Dataset ... {}".format(len(self.perir)))
             if toy=="1":
                 break
 
