@@ -1,6 +1,3 @@
 model perir
 pred_filepath ./data/predictions/
 log_dir ./logs/perir.log
-model perir
-pred_filepath ./data/predictions/
-log_dir ./logs/perir.log
