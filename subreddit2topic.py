@@ -1,5 +1,6 @@
 import praw
 import json
+import time
 
 def find_matching_subreddits(section_name, top_n):
     
@@ -14,15 +15,19 @@ def find_matching_subreddits(section_name, top_n):
         password=reddit_id['password']
     )
 
-    # print(f"Searching for subreddits related to: {section_name}")
-    #subreddits = list(reddit.subreddit.search(section_name, sort='relevance', time_filter='all'))
-    subreddits = list(reddit.subreddits.search(section_name))
+    while True: # for error of server overload
+        try:
+            subreddits = list(reddit.subreddits.search(section_name))
+            break
+        except:
+            time.sleep(10)
+
 
     # Extract subreddit names
     subreddit_names = [subreddit.display_name.lower() for subreddit in subreddits]
 
     if len(subreddit_names)>top_n:
-        return subreddit_names[:top_n], True
+        return subreddit_names[:top_n], 1
     else:
         return subreddit_names, False
 
@@ -36,7 +41,7 @@ def find_matching_topic(wikipedia_section, matching_dict, top_n):
             continue
     
     if (len(topic_list) == 0):
-        if more_than_topn:
+        if more_than_topn == 1:
             return find_matching_topic(wikipedia_section, matching_dict, top_n=top_n+5)
         else:
             return "", "False"

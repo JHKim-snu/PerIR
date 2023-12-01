@@ -62,12 +62,22 @@ def eval_gpt(pred_sents, gt_sents):
     scores = []
 
     for i, pred_sent in enumerate(pred_sents):
-        prompt = roll + "Text1:\n" + pred_sents + "\n\n" + "Text2:\n" + gt_sents + "\n\n" + output_format
+        prompt = roll + "Text1:\n" + pred_sent + "\n\n" + "Text2:\n" + gt_sents[i] + "\n\n" + output_format
 
-        response = openai.ChatCompletion.create(
-            model=model,
-            messages=[{"role": "user", "content": prompt}]
-        )
+        error_iter = 0
+        while True:
+            error_iter += 1
+            try:
+                response = openai.ChatCompletion.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                break
+            except:
+                if error_iter > 10:
+                    answer = ""
+                else:
+                    continue
 
         answer = response['choices'][0]['message']['content']
 
@@ -75,7 +85,8 @@ def eval_gpt(pred_sents, gt_sents):
             if 0<int(answer)<6:
                 scores.append(int(answer))
         except:
-            print("gpt output is not in int format!")
+            # print("gpt output is not in int format!")
+            continue
         
     score = sum(scores)/len(scores)*100
     
@@ -111,10 +122,10 @@ def get_sents(pred_filepath, gt_filepath = args.gt_filepath, format = args.forma
             with open(gt_filepath, "r") as f_gt:
                 data_gt = json.load(f_gt)
                 for i, sample in enumerate(data_pred):
-                    for field,sents in sample['answers'].items():
+                    for field,sents in sample['answer'].items():
                         for sent in sents:
                             pred_sents.append(sent.replace("\n", " "))
-                            gt_sents.append(data_gt[i]['answers'][field].replace("\n", " "))
+                            gt_sents.append(data_gt[i]['answer'][field].replace("\n", " "))
 
     return pred_sents, gt_sents
 
