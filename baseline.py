@@ -61,7 +61,7 @@ def answerer(summary, query, llm):
 
     problem_def = "Based on the user's interest given as following:\n"
     role = "Answer the following question:\n"
-    condition = "Tell me briefly within two sentences."
+    condition = "Tell me briefly within two sentences. Make sure the answer is related to the interest of the user."
     prompt = problem_def + summary + '\n\n' + role + query + '\n\n' + condition
 
     if args.toy == '1':
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     start_time = time.time()
 
     openai_keys = []
-    keys_list = ['sy','mh','mh2','sj','jk','js']
+    keys_list = ['mh','mh2','sj','gc','sy','js']
     for key in keys_list:
         key_path = os.path.join('./personal_info/', 'openai_key_'+key+'.txt')
         openai_keys.append(key_path)

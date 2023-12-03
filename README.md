@@ -10,7 +10,7 @@
 ## Overview
 A dataset for Personalized Information Retrieval (PerIR).
 
-<img src="github_figures/perir_overview.png" width="100%" align="middle"><br><br>
+<img src="github_figures/perir_overview.png" width="60%" align="middle"><br><br>
 
 PerIR aims to deliver responses that are specifically tailored to the user's social media content on platforms like Reddit, in response to a given query. 
 The objective is to provide highly relevant and personalized answers that align with the unique characteristics and preferences evident in the user's postings on social media.

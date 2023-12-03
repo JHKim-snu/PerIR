@@ -49,7 +49,7 @@ def eval_google_bleu(pred_sents, gt_sents):
 
 
 def eval_gpt(pred_sents, gt_sents):
-    with open('./personal_info/openai_key_gc.txt','r') as f:
+    with open('./personal_info/openai_key_jk.txt','r') as f:
         OPENAI_API_KEY = f.readline()
 
     openai.api_key = OPENAI_API_KEY
@@ -62,6 +62,8 @@ def eval_gpt(pred_sents, gt_sents):
     scores = []
 
     for i, pred_sent in enumerate(pred_sents):
+        if i%100 == 0:
+            print("GPT evaluation... {} done".format(int(i/len(pred_sents)*100)))
         prompt = roll + "Text1:\n" + pred_sent + "\n\n" + "Text2:\n" + gt_sents[i] + "\n\n" + output_format
 
         error_iter = 0
