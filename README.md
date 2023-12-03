@@ -8,7 +8,12 @@
 
 
 ## Overview
-A dataset for Personalized Information Retrieval (PerIR)
+A dataset for Personalized Information Retrieval (PerIR).
+
+<img src="github_figures/perir_overview.png" width="100%" align="middle"><br><br>
+
+PerIR aims to deliver responses that are specifically tailored to the user's social media content on platforms like Reddit, in response to a given query. 
+The objective is to provide highly relevant and personalized answers that align with the unique characteristics and preferences evident in the user's postings on social media.
 
 
 Use PerIR
@@ -47,6 +52,19 @@ conda activate perir
 pip install -r requirements.txt
 ```
 
+If you want to construct your own PerIR data or infer the models, you must need an openai API key. 
+Follow the instructions [here](https://platform.openai.com/docs/quickstart?context=python) and save your key in `personal_info/openai_key_{NAME}.txt`
+
+To use Reddit API, follow the instructions [here](https://github.com/reddit-archive/reddit/wiki/OAuth2) and save your information as following in `personal_info/reddit.json`
+```python
+{
+    "client_id":"hLAu4IE_qw8sS1aBUX0Zww",
+    "client_secret":"5AxBtnM7BdmxmZ8gu-sKg00gIs34DA",
+    "user_agent":"monhoney-agent",
+    "username":"monhoney",
+    "password":"bi1847!!"
+}
+```
 
 How to Build PerIR
 ----------------------
