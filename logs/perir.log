@@ -1,0 +1,23 @@
+start loading PerIR dataset
+no matching field for Land subdivisions
+no matching field for Hazard Classification
+no matching field for Audiovisual equipment
+no matching field for DIAL (acronym)
+no matching field for Watercraft dimensions
+no matching field for Incidence Structure
+no matching field for Incidence Structure
+no matching field for Linear measurement
+no matching field for Organology
+no matching field for Human Categorization
+no matching field for Polyseme
+no matching field for Surgical Stress
+no matching field for SWIFT Organization
+17213 number of PerIR data loaded!
+Inference ... 0.0 Done
+perir model: 325 dictionaries (queries) saved to ./data/predictions/pred_perir.json
+Traceback (most recent call last):
+  File "./baseline.py", line 207, in <module>
+    
+  File "/home/jhkim/PerIR/eval.py", line 122, in get_sents
+    with open(gt_filepath, "r") as f_gt:
+IsADirectoryError: [Errno 21] Is a directory: './data/predictions/'

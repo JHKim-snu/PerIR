@@ -1,1 +1,32 @@
-{"bertscore": {"f1": 0.8483027815818787, "precision": 0.842688798904419, "recall": 0.8539921641349792}, "bleu": {"bleu": 0.0, "precisions": [0.175, 0.02564102564102564, 0.0, 0.0], "brevity_penalty": 1.0, "length_ratio": 2.0, "translation_length": 40, "reference_length": 20}, "meteor": {"meteor": 0.21739130434782608}, "rouge": {"rouge1": 0.29629629629629634, "rouge2": 0.038461538461538464, "rougeL": 0.14814814814814817, "rougeLsum": 0.14814814814814817}, "google_bleu": {"google_bleu": 0.05194805194805195}, "gpt_score (%)": 500.0}
+{
+    "bertscore": {
+        "f1": 0.8599975109100342,
+        "precision": 0.8584932684898376,
+        "recall": 0.8615991473197937
+    },
+    "bleu": {
+        "bleu": 0.0,
+        "precisions": [
+            0.26495726495726496,
+            0.043859649122807015,
+            0.009009009009009009,
+            0.0
+        ],
+        "brevity_penalty": 1.0,
+        "length_ratio": 1.4268292682926829,
+        "translation_length": 117,
+        "reference_length": 82
+    },
+    "meteor": {
+        "meteor": 0.2333012761881499
+    },
+    "rouge": {
+        "rouge1": 0.3113863537592351,
+        "rouge2": 0.055848433343896144,
+        "rougeL": 0.1848906272635086,
+        "rougeLsum": 0.1848906272635086
+    },
+    "google_bleu": {
+        "google_bleu": 0.08078602620087336
+    }
+}

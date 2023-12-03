@@ -6,6 +6,8 @@ from torch.utils.data import Dataset, DataLoader
 import argparse
 from eval import *
 import os
+import copy
+import time
 
 
 parser = argparse.ArgumentParser()
@@ -143,9 +145,11 @@ def literal(user_reddit, query, llm): # model that uses raw reddit data
 
 
 if __name__ == "__main__":
+    
+    start_time = time.time()
 
     openai_keys = []
-    keys_list = ['gc','sy','js','mh','mh2','sj','jk']
+    keys_list = ['sy','mh','mh2','sj','jk','js']
     for key in keys_list:
         key_path = os.path.join('./personal_info/', 'openai_key_'+key+'.txt')
         openai_keys.append(key_path)
@@ -170,14 +174,14 @@ if __name__ == "__main__":
     # init save_data (prediction data to save)
     with open(gt_file_path, 'r') as f:
         gt_all = json.load(f)
-    save_data = gt_all.copy()
+    save_data = copy.deepcopy(gt_all)
     for i,sample in enumerate(save_data):
         for k, v in sample['answer'].items():
             save_data[i]['answer'][k] = []
 
-    save_data_perir = save_data.copy()
-    save_data_general = save_data.copy()
-    save_data_literal = save_data.copy()
+    save_data_perir = copy.deepcopy(save_data)
+    save_data_general = copy.deepcopy(save_data)
+    save_data_literal = copy.deepcopy(save_data)
 
     dataset = PerIR(gt_file_path, interest_file_path, matching_path, args.toy, gt2topic_path)
     print("{} number of PerIR data loaded!".format(len(dataset)))
@@ -187,7 +191,12 @@ if __name__ == "__main__":
     # start inference
 
     if args.save_results:
-        summary_history = {}
+        summary_history_path = './data/summary_history.json'
+        try:
+            with open(summary_history_path,'r') as f_s:
+                summary_history = json.load(f_s)
+        except:
+            summary_history = {}
         for i, batch in enumerate(dataloader):
             
             no_keys = True
@@ -213,7 +222,6 @@ if __name__ == "__main__":
             user_reddit = [str(snt[0]) for snt in batch['user_reddit']]
             gt_answer = batch['gt_answer'][0]
             field = batch['field'][0]
-            # print(field)
 
             if args.model == 'all':
                 # perir
@@ -240,7 +248,7 @@ if __name__ == "__main__":
                 save_data_literal[batch['index']]['answer'][field].append(pred_literal)
                 with open(os.path.join(args.pred_filepath, "med_literal.json"), 'w') as f:
                     json.dump(save_data_literal, f)
-            else:
+            else: #if not all
                 if args.model == 'perir':
                     try: 
                         summary = summary_history[str(user_reddit)]
@@ -258,6 +266,11 @@ if __name__ == "__main__":
                     keys_used_dict[api_key] += 1
 
                 save_data[batch['index']]['answer'][field].append(pred)
+                with open(os.path.join(args.pred_filepath, "med_{}.json".format(args.model)), 'w') as f:
+                    json.dump(save_data, f)
+
+        with open(summary_history_path,'w') as f_s:
+            json.dump(summary_history,f_s)
 
         if args.model == 'all':
             for model_name in ['perir','general','literal']:
@@ -288,14 +301,37 @@ if __name__ == "__main__":
                     result_scores[c] = s
                     c,s = eval_google_bleu(pred_sents, gt_sents)
                     result_scores[c] = s
-                    # c,s = eval_gpt(pred_sents, gt_sents)
-                    # result_scores[c] = s
+                    c,s = eval_gpt(pred_sents, gt_sents)
+                    result_scores[c] = s
 
                     with open(os.path.join('./scores/',args.model+'.json'),'w') as f_s:
                         json.dump(result_scores, f_s)
                 
                 else: #if all
-                    print('do something')
+                    for model_name in ['perir','general','literal']:
+                        file_name = "pred_" + model_name + ".json"
+                        save_file_path = os.path.join(args.pred_filepath, file_name)
+
+                        pred_sents, gt_sents = get_sents(save_file_path, args.gt_filepath, args.format)
+                        result_scores = {}
+                        c,s = eval_bertscore(pred_sents, gt_sents)
+                        result_scores[c] = s
+                        c,s = eval_bleu(pred_sents, gt_sents)
+                        result_scores[c] = s
+                        c,s = eval_meteor(pred_sents, gt_sents)
+                        result_scores[c] = s
+                        c,s = eval_rouge(pred_sents, gt_sents)
+                        result_scores[c] = s
+                        c,s = eval_google_bleu(pred_sents, gt_sents)
+                        result_scores[c] = s
+                        with open(os.path.join('./scores/',model_name+'.json'),'w') as f_s:
+                            json.dump(result_scores, f_s)
+
+                        c,s = eval_gpt(pred_sents, gt_sents)
+                        result_scores[c] = s
+
+                        with open(os.path.join('./scores/',model_name+'.json'),'w') as f_s:
+                            json.dump(result_scores, f_s)
 
             else:
                 pred_sents, gt_sents = get_sents(save_file_path, args.gt_filepath, args.format)
@@ -305,6 +341,10 @@ if __name__ == "__main__":
                 print_result(eval_rouge(pred_sents, gt_sents))
                 print_result(eval_google_bleu(pred_sents, gt_sents))
                 # print_result(eval_gpt(pred_sents, gt_sents))
+
+    end_time = time.time()
+    tot_time = (end_time-start_time)/3600
+    print("Total time spent: {} hours".format(tot_time))
 
 
             

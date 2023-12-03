@@ -49,7 +49,7 @@ def eval_google_bleu(pred_sents, gt_sents):
 
 
 def eval_gpt(pred_sents, gt_sents):
-    with open('./personal_info/openai_key_sy.txt','r') as f:
+    with open('./personal_info/openai_key_gc.txt','r') as f:
         OPENAI_API_KEY = f.readline()
 
     openai.api_key = OPENAI_API_KEY
@@ -72,14 +72,14 @@ def eval_gpt(pred_sents, gt_sents):
                     model=model,
                     messages=[{"role": "user", "content": prompt}]
                 )
+                answer = response['choices'][0]['message']['content']
                 break
             except:
                 if error_iter > 10:
                     answer = ""
+                    break
                 else:
                     continue
-
-        answer = response['choices'][0]['message']['content']
 
         try:
             if 0<int(answer)<6:
@@ -88,7 +88,7 @@ def eval_gpt(pred_sents, gt_sents):
             # print("gpt output is not in int format!")
             continue
         
-    score = sum(scores)/len(scores)*100
+    score = sum(scores)/len(scores)*20
     
     return "gpt_score (%)", score   
 

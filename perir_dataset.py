@@ -2,6 +2,7 @@ import json
 from torch.utils.data import Dataset, DataLoader
 from subreddit2topic import find_matching_topic
 import os
+import random
 
 class PerIR(Dataset):
     def __init__(self, gt_file, interest_file, matching_path, toy, gt2topic_path):
@@ -24,9 +25,9 @@ class PerIR(Dataset):
         for idx, sample in enumerate(self.gt_data):
             for field, answer in sample['answer'].items():
                 try:
-                    topic, valid = find_matching_topic(field, self.matching_dict, 5)
-                except:
                     topic, valid = self.gt2topic_data[field]
+                except:
+                    topic, valid = find_matching_topic(field, self.matching_dict, 5)
 
                 if valid == "False":
                     print("no matching field for {}".format(field))
@@ -34,7 +35,9 @@ class PerIR(Dataset):
                 try:
                     user_reddit_list = self.interest_data[topic]
                 except:
+                    print("no user reddit for topic... {}".format(topic))
                     continue
+                random.shuffle(user_reddit_list)
                 for user_reddit in user_reddit_list:
                     dummy_dict = {}
                     dummy_dict['query'] = sample['query']
@@ -44,6 +47,8 @@ class PerIR(Dataset):
                     dummy_dict['polyseme'] = sample['polyseme']
                     dummy_dict['index'] = idx
                     self.perir.append(dummy_dict)
+                    if toy == "2":
+                        break
                     # if len(self.perir)%100 == 0:
                         # print("Loading PerIR Dataset ... {}".format(len(self.perir)))
             if toy=="1":
