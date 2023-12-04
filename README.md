@@ -115,14 +115,15 @@ The final dataset is in ...`.json` and the Dataset is defined in ....
 Baseline
 ----------------------
 ```shell
-python baseline.py
+python baseline.py --model all --ge_filepath ./data/gt.json --metric all
 ```
+
 - `--pred_filepath`: Path to the file containing predicted text.
 - `--gt_filepath`: Path to the file containing ground truth text.
 - `--format`: Supports `.txt` format or `.json` format. For `.txt` format, each line should contain sentences of each samples. `.json` format consists of a list of dictionaries as examplified below:
 - `--model`: `perir`,`general`,`literal` for each model. `all` if you want to infer all the models at once.
 - `--toy`: `1` if you just want to test that the code is working. It would minimize the number of operations with the toy dataset. `2` if you want to test your code with small (90% reduced) PerIR dataset.
-- `--metric`: Specify the metric to use for evaluation (default: all). Choose from 'all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'.
+- `--metric`: Specify the metric to use for evaluation. Choose from 'all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'.
 - `--save_scores`: `True` if you want to save the scores in `./scores/`, `False` if you just want to print the scores.
 - `--save_results`: Whether you would want to save the inferred results.
 
