@@ -70,8 +70,15 @@ How to Build PerIR
 ----------------------
 <span style="color:red">You can skip this part if you only want to use the dataset.</span>
 
+<img src="github_figures/how_to.png" width="100%" align="middle"><br><br>
+
+1. Collect Polyseme
+
 First, you need a list of polysemes in a `.tsv` format.
 The polyseme we constructed can be found in `./data/polyseme.tsv`.
+
+
+2. Web Crawling from Wikipedia
 
 Then, we crawl the fields and meanings of every polyseme from Wikipedia.
 The crawled data is provided in `./data/polyseme_wiki.json`, and can be done by following the script:

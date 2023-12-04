@@ -59,9 +59,9 @@ def summarizer(user_reddit, llm):
 
 def answerer(summary, query, llm):
 
-    problem_def = "Based on the user's interest given as following:\n"
+    problem_def = "Based on the user's interest given as following:\n\n"
     role = "Answer the following question:\n"
-    condition = "Tell me briefly within two sentences. Make sure the answer is related to the interest of the user."
+    condition = "Tell me briefly within two sentences. Make sure the answer is related to the interest of the user.\n\nAnswer:"
     prompt = problem_def + summary + '\n\n' + role + query + '\n\n' + condition
 
     if args.toy == '1':
@@ -74,7 +74,8 @@ def answerer(summary, query, llm):
             try:
                 response = openai.ChatCompletion.create(
                     model=llm,
-                    messages=[{"role": "user", "content": prompt}]
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature = 0
                 )
                 answer = response['choices'][0]['message']['content']
                 break
