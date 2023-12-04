@@ -171,7 +171,9 @@ if __name__ == "__main__":
     interest_file_path = './data/reddit_interest.json'
     matching_path = "" # './data/subreddit_topic.json'
     gt2topic_path = './data/gt2topic.json'
-
+    if args.toy == '1':
+        gt_file_path = './data/gt_toy.json'
+        
     # init save_data (prediction data to save)
     with open(gt_file_path, 'r') as f:
         gt_all = json.load(f)
