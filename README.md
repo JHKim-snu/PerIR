@@ -58,11 +58,11 @@ Follow the instructions [here](https://platform.openai.com/docs/quickstart?conte
 To use Reddit API, follow the instructions [here](https://github.com/reddit-archive/reddit/wiki/OAuth2) and save your information as following in `personal_info/reddit.json`
 ```python
 {
-    "client_id":"hLAu4IE_qw8sS1aBUX0Zww",
-    "client_secret":"5AxBtnM7BdmxmZ8gu-sKg00gIs34DA",
-    "user_agent":"monhoney-agent",
-    "username":"monhoney",
-    "password":"bi1847!!"
+    "client_id":{YOUR_ID},
+    "client_secret":{YOUR_SECRET},
+    "user_agent":{YOUR_USER_AGENT},
+    "username":{YOUR_USERNAME},
+    "password":{YOUR_PASSWORD}
 }
 ```
 
@@ -87,8 +87,17 @@ The crawled data is provided in `./data/polyseme_wiki.json`, and can be done by 
 python wiki_crawling.py
 ```
 
-KKKKKKKKKKKKKKKKKK
+3. Generate Query
 
+For all the polysemes in `./data/polyseme.tsv` and with the usages of the polysemes crawled in `./data/polyseme_wiki.json`, an ambiguous query and answers are automatically generated through an LLM. 
+The example code is provided in `make_query.ipynb`. Since the quality of QA pair varies based on the prompt you use, be careful when you change the prompt. 
+Data cleaning should be done manually after the query generation.
+
+4. Collect User Data from Reddit
+
+
+
+5. Match to High-Level Topics
 
 Now, you need to match each answers to a subreddit to get an user interest data (reddit posts of a user).
 
@@ -97,11 +106,17 @@ python subreddit2topic.py
 ```
 This is based on the [reddit API](https://praw.readthedocs.io/en/stable/code_overview/reddit/subreddits.html)
 
+The final dataset is in ...`.json` and the Dataset is defined in ....
 
+
+Baseline
+----------------------
+```shell
+python baseline.py
+```
 
 Evaluation
 ----------------------
-
 
 This Python script allows you to evaluate text metrics between predicted and ground truth files. It supports various metrics such as BLEU, METEOR, ROUGE, Google BLEU, and BERTScore.
 
