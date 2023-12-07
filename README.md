@@ -7,7 +7,7 @@
 </div>
 
 <h3 align="center">
-<a href="https:">Paper(TBD)</a> | <a href="https://">Poster(TBD)</a> | <a href="https://">Presentation Video(TBD)</a> | <a href="https://">Demo Video(TBD)</a>
+<a href="https:">Paper(TBD)</a> | <a href="https://">Poster(TBD)</a> | <a href="https://drive.google.com/file/d/1OXc03t8D_eeT0KmIpmRcOkhsZbDCNvos/view?usp=sharing">Presentation Video(KOR)</a> | <a href="https://docs.google.com/presentation/d/1OM7l-jlZAgfVhu0oWqEXez2VtBa80q1M/edit?usp=sharing&ouid=114809787991544027535&rtpof=true&sd=true">Slides(ENG)</a>
 </h3>
 
 ## Overview
