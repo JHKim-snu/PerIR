@@ -12,7 +12,7 @@
         "People": "Post can be a surname, such as the musician Post Malone or the botanist George Edward Post.",
         "Dentistry": "Post and core is a type of dental restoration.",
         "Organology": "Post can refer to a key post in a woodwind keywork system.",
-        "Arts, entertainment, and media": "Post can refer to albums by artists like or Paul Kelly, or it can refer to a musical change during the intro of a recording.",
+        "Arts, entertainment, and media": "Post can refer to albums by artists like Bj\u00f6rk or Paul Kelly, or it can refer to a musical change during the intro of a recording.",
         "Periodicals": "Post can refer to magazines like Australasian Post or Post Magazine.",
         "Communications": "Post can refer to an entry in a blog or internet forum, or it can refer to part-of-speech tagging in linguistics.",
         "Computing and technology": "Post can refer to an HTTP request method, an internet top-level domain, or power-on self-test on electronic devices.",
@@ -20,6 +20,15 @@
         "Organizations and companies": "Post can refer to the Parliamentary Office of Science and Technology in the UK, Peninsula Open Space Trust in California, or Post Holdings, a consumer packaged goods holding company.",
         "Sports": "Post can refer to an area near the basket in basketball, a route run by a receiver in American football, or a method of horseback riding at the trot.",
         "Time": "The prefix 'post' means after, aftermath, or afterward."
+      }
+    },
+    {
+      "query": "What is the meaning of the word 'post'?",
+      "polyseme": "post",
+      "answer": {
+        "Communication": "In the context of communication, a 'post' refers to a message or statement shared on a social media platform or online forum.",
+        "Mail and Shipping": "In the field of mail and shipping, a 'post' is a system or organization responsible for the collection, processing, and delivery of letters and packages.",
+        "Job Position": "In the corporate world, a 'post' can also refer to a specific job position or role within an organization."
       }
     }
   ],
@@ -34,6 +43,25 @@
         "Computing and electronics": "A potentiometer, also known as a pot, is a variable resistor used to control the flow of electric current in electronic circuits.",
         "Other uses": "PotashCorp, with the stock symbol POT, is a Canadian fertilizer company."
       }
+    },
+    {
+      "query": "What is a use for a pot?",
+      "polyseme": "pot",
+      "answer": {
+        "Containers": "A cooking pot is primarily used for cooking food, such as boiling pasta or making soup.",
+        "Computing and electronics": "In computer graphics, a 'pot' is a term used to describe a 3D model with no holes or gaps.",
+        "Plants": "Some gardeners use cooking pots as makeshift planters for growing herbs or small vegetables.",
+        "Other uses": "A cooking pot can also be used for crafts, such as creating candle holders or melting wax."
+      }
+    },
+    {
+      "query": "what is the pot used for?",
+      "polyseme": "pot",
+      "answer": {
+        "Cooking": "In the field of cooking, a pot is commonly used for boiling, stewing, and simmering ingredients to prepare meals.",
+        "Gardening": "In gardening, a pot is often used as a container for growing plants, allowing for easy mobility and control of soil conditions.",
+        "Gambling": "In gambling, a pot refers to the total amount of money or chips that players contribute during a round of betting in card games like poker."
+      }
     }
   ],
   [
@@ -45,16 +73,6 @@
         "Symbols": "The pound sign, also known as the hashtag symbol (#), is used in social media to categorize and filter posts.",
         "Places in the United States": "Pound, Virginia is a town located in the United States.",
         "Entertainment": "Pound (band) is an American rock band."
-      }
-    },
-    {
-      "query": "What is the significance of the pound symbol?",
-      "polyseme": "pound",
-      "answer": {
-        "Currency": "The pound symbol,is used to represent the British pound sterling, the official currency of the United Kingdom.",
-        "Mathematics": "In mathematics, the pound symbol is used as a symbol for the number sign or hash symbol.",
-        "Music": "The pound symbol is used in music notation to indicate a sharp note.",
-        "Geography": "Pound, Virginia is a town in the United States that shares its name with the currency symbol."
       }
     }
   ],
@@ -205,7 +223,7 @@
       }
     },
     {
-      "query": "Recommend me a 'race' event",
+      "query": "What is a popular event associated with the word 'race'?",
       "polyseme": "race",
       "answer": {
         "Sports": "The 'Formula 1' race is a popular event in the world of motorsports, featuring high-speed cars racing on circuits around the globe.",
@@ -218,13 +236,22 @@
   ],
   [
     {
-      "query": "What is 'rack'?",
+      "query": "What is the use of the word 'rack'?",
       "polyseme": "rack",
       "answer": {
         "Storage and Installation": "A bike rack is commonly used to store bicycles when not in use.",
         "Media": "The song 'Racks' by rapper Y. C. is a popular representation of the word in music.",
         "People": "The character Rack from Buffy the Vampire Slayer is a notable representation of the word in fiction.",
         "Transportation": "A rack and pinion system is commonly used in vehicle steering."
+      }
+    },
+    {
+      "query": "What does the word 'rack' refer to?",
+      "polyseme": "rack",
+      "answer": {
+        "IT Infrastructure": "In IT infrastructure, a rack is a framework consisting of mounting slots (called rack units) for securely holding electronic equipment such as servers, switches, and patch panels.",
+        "Storage and Organization": "In storage and organization, a rack refers to a piece of furniture or shelving unit with horizontal shelves or compartments used for storing and organizing items such as clothing, shoes, books, or tools.",
+        "Cooking": "In cooking, a rack is a metal framework or support used for holding food items such as meat or baked goods in an oven or grill, allowing heat to circulate evenly around them."
       }
     }
   ],
@@ -242,19 +269,23 @@
         "Literature": "The book 'Radical: Taking Back Your Faith from the American Dream' by David Platt explores the concept of radical faith. 'Radical: My Journey out of Islamist Extremism' is a memoir by Maajid Nawaz, recounting his personal experience with radicalism.",
         "Mathematics": "In mathematics, a radical can refer to the radical of an algebraic group, an ideal, a ring, a module, an integer, a Lie algebra, or a bilinear form. Each of these concepts has specific definitions and applications within mathematical theory."
       }
+    },
+    {
+      "query": "What is the meaning of 'radical'?",
+      "polyseme": "radical",
+      "answer": {
+        "Politics and Ideology": "In politics, 'radical' refers to the political intent of fundamental societal change, often associated with progressive ideas and movements.",
+        "Ideologies": "In ideologies, 'radical' can describe the adoption of extreme views or perspectives, such as radical feminism or radical Islam.",
+        "Science and Mathematics": "In science and mathematics, 'radical' can refer to various concepts, such as atoms with unpaired valence electrons in chemistry or radical expressions involving roots in mathematics.",
+        "Linguistics": "In linguistics, 'radical' can be synonymous with the root of a word, which is the form of the word after any prefixes and suffixes are removed.",
+        "Arts and Entertainment": "In arts and entertainment, 'radical' can be the title of a music album, such as 'Radical' by Every Time I Die, or a design period, such as the Radical Period in Italian design during the late 1960s.",
+        "Architecture and Design": "In architecture and design, 'radical' can refer to architectural styles or periods, like the Radical Baroque style.",
+        "Literature": "In literature, 'radical' can be the title of a book, such as 'Radical: Taking Back Your Faith from the American Dream' by Christian pastor David Platt.",
+        "Film": "In film, 'radical' can be the title of a movie, such as the upcoming Spanish language film 'Radical'."
+      }
     }
   ],
   [
-    {
-      "query": "What is the range of a function?",
-      "polyseme": "range",
-      "answer": {
-        "Mathematics": "The range of a function refers to the set of all possible output values that the function can produce.",
-        "Music": "In music, the range of a function refers to the distance between the lowest and highest pitch that a musical instrument can play.",
-        "Science": "In biology, the range of a function refers to the geographical area where a species can be found.",
-        "Technology": "In computer programming, the range of a function refers to the set of allowed values for a variable."
-      }
-    },
     {
       "query": "What does the word 'range' refer to?",
       "polyseme": "range",
@@ -304,16 +335,7 @@
       }
     },
     {
-      "query": "What should you be cautious of when using a buffer?",
-      "polyseme": "buffer",
-      "answer": {
-        "Chemistry": "When using a buffer in chemistry, one should be cautious of the pH level, as it can affect the effectiveness of the buffer.",
-        "Computer Science": "When using a buffer in computer science, one should be cautious of buffer overflows, which can lead to security vulnerabilities.",
-        "Geography": "When using a buffer in geography, one should be cautious of the distance between the buffer and the feature being buffered, as it can affect the accuracy of the analysis."
-      }
-    },
-    {
-      "query": "What are some techniques used in 'regression'?",
+      "query": "What is a technique used in 'regression'?",
       "polyseme": "regression",
       "answer": {
         "Statistics": "In statistics, linear regression is a commonly used technique to model the relationship between two variables by fitting a linear equation to the observed data.",
@@ -394,6 +416,15 @@
       }
     },
     {
+      "query": "What is the use of the word 'reward'?",
+      "polyseme": "reward",
+      "answer": {
+        "Business and Economics": "A cashback reward program is a common use of the word 'reward' in the context of business and economics.",
+        "Arts, Entertainment, and Media": "The song 'Reward' by The Teardrop Explodes is a popular representation of the word in music.",
+        "Places": "Reward, California is a location associated with the name 'reward' in the United States."
+      }
+    },
+    {
       "query": "What is a way to earn a 'reward'?",
       "polyseme": "reward",
       "answer": {
@@ -423,33 +454,6 @@
         "People": "Ring is a surname shared by several individuals.",
         "Polyseme": "Ring is a word with multiple meanings across different fields."
       }
-    },
-    {
-      "query": "What are the different types of 'ring'?",
-      "polyseme": "ring",
-      "answer": {
-        "Jewelry": "In the field of jewelry, there are various types of rings such as engagement rings, wedding rings, eternity rings, cocktail rings, and signet rings.",
-        "Sports": "In sports, there are different types of rings like championship rings, Super Bowl rings, World Series rings, and Olympic rings.",
-        "Physics": "In physics, a ring is a circular object or structure, like a ring-shaped magnet or a ring of particles in a particle accelerator.",
-        "Mathematics": "In mathematics, a ring is an algebraic structure with two binary operations, addition and multiplication, that satisfy specific axioms."
-      }
-    }
-  ],
-  [
-    {
-      "query": "What are the different types of rock?",
-      "polyseme": "rock",
-      "answer": {
-        "Geology": "In geology, there are three main types of rocks: igneous, sedimentary, and metamorphic. Igneous rocks are formed from the solidification of molten material, sedimentary rocks are formed from the accumulation and lithification of sediments, and metamorphic rocks are formed from the transformation of existing rocks through heat and pressure.",
-        "Music": "In rock music, there are various subgenres such as classic rock, alternative rock, punk rock, and heavy metal. Each subgenre has its own distinct sound and characteristics.",
-        "Places": "In different places, there are various rock formations and landmarks. For example, the Rock of Gibraltar is a famous landmark in the British overseas territory near Spain, and the Rock of Cashel is a historic site in Ireland.",
-        "People": "In terms of people, there are individuals with the surname Rock, like Dwayne Johnson, who is a popular actor and wrestler known as 'The Rock'. There are also musicians and rappers who go by the name Rock, such as the American rapper Rock (Jamal Bush) and the professional wrestler Man Mountain Rock (Maxx Payne).",
-        "Arts, Entertainment, and Media": "In arts, entertainment, and media, the term 'rock' can refer to fictional characters like Rock from DC Comics or Rock from Osamu Tezuka's manga series. It can also be used in the titles of albums, songs, and films, such as the album 'Rock' by Pleymo or the film 'Rocks', a British coming-of-age drama.",
-        "Computing and Technology": "In computing and technology, 'rock' can refer to the Rock processor developed by Sun Microsystems or the Rocks Cluster Distribution, a Linux distribution for cluster computing.",
-        "Food": "In the context of food, 'rock' can refer to rock candy, a type of stick-shaped boiled sugar confectionery, or rock salmon, which is often used to refer to a type of fish.",
-        "Slang": "In slang, 'rock' can be used to refer to crack cocaine or diamonds, which are often associated with their hardness and durability.",
-        "Sports": "In sports, 'rock' can be associated with various activities. For example, in curling, players slide a stone or rock on ice towards a target area. In stone put or stone skipping, participants throw heavy stones or rocks for distance or accuracy."
-      }
     }
   ],
   [
@@ -470,7 +474,6 @@
         "Devices": "A fishing rod is a tool used to catch fish, like a long pole with a hook on the end.",
         "Arts and Entertainment": "Rod (Avenue Q) is a character in the stage musical Avenue Q.",
         "People": "Rod is a given name.",
-        "Places": "R\u00f3d is a village in Tili\u015fca Commune, Sibiu County, Romania.",
         "Science and Technology": "Rod cell is a cell found in the retina that is sensitive to light/dark (black/white)."
       }
     },
@@ -493,7 +496,6 @@
         "Food": "Bread roll, a small individual loaf of bread",
         "Arts, entertainment and media": "Roll (Anne McCue album), 2004",
         "People": "Bob Roll (born 1960), American professional cyclist and commentator",
-        "Rolls": "A luxury car manufactured by Rolls-Royce Limited (1904\u20131973), Rolls-Royce Motors (1973\u20131998), or Rolls-Royce Motor Cars (1998\u2013present)",
         "Places": "Roll, Arizona, U.S."
       }
     },
@@ -599,37 +601,10 @@
   ],
   [
     {
-      "query": "What are the different types of seals?",
-      "polyseme": "seal",
-      "answer": {
-        "Common uses": "Seals can refer to various marine mammals, such as earless seals, fur seals, and eared seals.",
-        "Arts, entertainment and media": "Seals can also refer to albums by the musician Seal, such as Seal (1991 album), Seal (1994 album), and Seal IV.",
-        "Law": "In contract law, a seal is a legal formality used for contracts and other instruments. In East Asia, a seal is a stamp used as a form of signature.",
-        "Military": "Seals can refer to military aircraft like the Fairey Seal and Supermarine Seal II, as well as naval ships and submarines like HMS Seal and USS Seal.",
-        "Special forces": "Seals can refer to special operations forces like the United States Navy SEALs, Thai Navy Seals, Naval Special Operations Command, and ROKN UDT/SEALs.",
-        "People": "Seal can refer to the English singer and songwriter Seal, as well as individuals with the surname Seal, such as Aditya Seal, Barry Seal, and Elizabeth Seal.",
-        "Places": "Seal can refer to locations like Seal, Kent in England, Seal Beach in California, and Seal Lake in Greenland."
-      }
-    }
-  ],
-  [
-    {
-      "query": "What is a method for image segmentation?",
-      "polyseme": "segmentation",
-      "answer": {
-        "Biology": "One method for image segmentation in biology is called thresholding, which involves setting a specific intensity threshold to separate objects of interest from the background.",
-        "Computing and communications": "In computer vision, one commonly used method for image segmentation is called the Watershed algorithm, which simulates the flooding of a landscape to identify distinct regions.",
-        "Geometry": "In geometry, the Region Growing algorithm is often used for image segmentation. It starts with a seed pixel and expands the region by adding adjacent pixels that meet a certain similarity criterion."
-      }
-    }
-  ],
-  [
-    {
       "query": "What is sell?",
       "polyseme": "sell",
       "answer": {
         "People": "Brenda Sell is an American martial arts instructor and highest ranking non-Korean female practitioner of taekwondo.",
-        "Acronym": "Syndicat des \u00e9diteurs de logiciels de loisirs (SELL) is a French organization that promotes the interests of video game developers.",
         "Sports": "Sell Student Games is a multi-sport event for university and college students.",
         "Geography": "Southern Evacuation Lifeline (SELL) is a proposed road in Horry County, South Carolina."
       }
@@ -677,17 +652,6 @@
     }
   ],
   [
-    {
-      "query": "What can be a customer service?",
-      "polyseme": "service",
-      "answer": {
-        "Economics and Business": "Customer service can be categorized into different types based on the channel of communication, such as phone service, email service, and chat service.",
-        "Technology": "In the context of technology, customer service can be provided through a helpdesk software, live chat support, or a customer relationship management (CRM) system.",
-        "Arts, Entertainment, and Media": "In the entertainment industry, customer service may refer to the support provided to customers of streaming platforms, ticketing services, or online gaming.",
-        "Religion": "Customer service in the context of religion can be seen as the support and guidance provided by religious institutions to their followers.",
-        "Activities": "Customer service in the activities field includes the assistance offered by businesses, such as banks, retail stores, or airlines, to their customers."
-      }
-    },
     {
       "query": "How can I improve the 'service' I provide?",
       "polyseme": "service",
@@ -845,36 +809,15 @@
         "Science and technology": "Spring green, occurs between green and cyan in the visible spectrum",
         "Computing": "Spring (application), an E-commerce platform"
       }
-    },
-    {
-      "query": "What are some common activities associated with the word 'spring'?",
-      "polyseme": "spring",
-      "answer": {
-        "Nature": "In nature, 'spring' is commonly associated with the blooming of flowers, the emergence of new leaves on trees, and the return of migratory birds.",
-        "Sports": "In sports, 'spring' is often associated with activities like baseball spring training, soccer tournaments, and track and field events.",
-        "Fashion": "In the world of fashion, 'spring' is typically associated with the release of new clothing lines and trends for the upcoming season."
-      }
     }
   ],
   [
-    {
-      "query": "What are types of the stake'?",
-      "polyseme": "stake",
-      "answer": {
-        "Tools": "Archer's stake, survey stakes, sudis (stake), torture stake, steel fence post, side stakes",
-        "Entertainment": "Stake: Fortune Fighters (video game), The Stake (silent short film), 'The Stake' (song by The Steve Miller Band), Stakes (miniseries), Stake (band)",
-        "People": "Dagnija Statue (Latvian politician), Robert E. Stake (Professor Emeritus of Education)",
-        "Betting and gambling": "Stakes (amount one buys in for while gambling), stakes race, graded stakes race",
-        "Companies": "Stake (platform), Stake.com (online casino), @stake (computer services company)"
-      }
-    },
     {
       "query": "What is stake?",
       "polyseme": "stake",
       "answer": {
         "Tools": "An archer's stake is a defensive stake carried by medieval longbowmen. A sudis is a fortification carried by Roman legionaries. Torture stake is a method of execution similar to crucifixion. A steel fence post is a kind of stake.",
         "Entertainment": "Stake: Fortune Fighters is a video game from 2003. The Stake is a silent short film from 1915. 'The Stake' is a song by The Steve Miller Band from 1977. 'Stakes' is a miniseries from Adventure Time. Stake is also the name of a band.",
-        "People": "Dagnija Statue is a Latvian politician. Robert E. Stake is a Professor Emeritus of Education.",
         "Betting and gambling": "Stakes are the amount one buys in for while gambling. A stakes race is a type of horse race. Graded stakes race is another term used in horse racing.",
         "Companies": "Stake is an Australian financial services company. Stake.com is an online casino. @stake is a computer services company."
       }
@@ -958,7 +901,7 @@
       "polyseme": "strain",
       "answer": {
         "Science and technology": "Strain (biology) refers to variants of plants, viruses, or bacteria used for experimental purposes. Strain (chemistry) is a chemical stress of a molecule. Strain (injury) is an injury to a muscle resulting from over-stretching. Strain (mechanics) is a measure of deformation in a material body. Filtration involves straining solids from fluids. Percolation refers to the movement and filtering of fluids through porous materials. Psychological stress can also be referred to as strain.",
-        "Cooking": "Straining is the process of separating liquid from solids using a strainer or sieve. Straining can also refer to pur\u00e9eing by forcing through a sieve instead of using a blender.",
+        "Cooking": "Straining is the process of separating liquid from solids using a strainer or sieve.",
         "Bridge": "In the game of contract bridge, strain refers to the indication of either the trump suit or notrump in a bid. It is also known as a denomination.",
         "Proper names": "Strain is a surname.",
         "Arts and media": "Strain (manga) is a 1996 manga written by Yoshiyuki Okamura and illustrated by Ryoichi Ikegami. Strain (music) refers to a series of musical phrases that create a distinct melody in a piece. Strain (album) is a 2004 album by Flesh Field. 'Strain: Strategic Armored Infantry' is a 2006 anime. Strain (film) is a 2020 Nigerian drama."
@@ -980,6 +923,8 @@
       "polyseme": "stress",
       "answer": {
         "Science and medicine": "Stress in biology refers to an organism's response to a stressor, which can be caused by environmental conditions such as temperature, pollution, or lack of food.",
+        "Occupational stress": "Occupational stress is caused by factors related to one's job, such as high workload, long working hours, lack of job security, or conflicts with colleagues.",
+        "Psychological stress": "Psychological stress can be caused by various factors, including personal relationships, financial problems, traumatic events, or chronic health conditions.",
         "Music": "In music, stress refers to the emphasis or prominence given to a particular note or set of notes, which can be caused by dynamics, rhythm, or melodic patterns."
       }
     },
@@ -988,6 +933,8 @@
       "polyseme": "stress",
       "answer": {
         "Science and Medicine": "In biology, stress can refer to an organism's response to a stressor such as an environmental condition.",
+        "Occupational Stress": "Occupational stress refers to stress that is related to one's job.",
+        "Psychological Stress": "Psychological stress is a feeling of strain and pressure experienced by individuals.",
         "Surgical Stress": "Surgical stress is the systemic response to surgical injury."
       }
     }
@@ -1131,7 +1078,7 @@
         "Publications": "Tap!, a defunct magazine for owners of Apple's iOS devices",
         "Businesses and organisations": "TAP Air Portugal, Portugal's flag carrier airline",
         "Medicine": "Lumbar puncture, also known as a spinal tap",
-        "People": "Tap Canutt (1932~2014), American stunt performer and actor",
+        "People": "Tap Canutt, American stunt performer and actor",
         "Places": "Tap, Azerbaijan",
         "Science and technology": "Tap (valve), a device for controlling the release of a liquid or gas, e.g. a water faucet",
         "Computing and communications": "Tap (signal processing), a delayed impulse response",
@@ -1254,15 +1201,6 @@
         "Places": "Tone can refer to various locations such as towns or rivers.",
         "Physiology": "In physiology, tone refers to the state of tension or responsiveness of the organs or tissues of the body."
       }
-    },
-    {
-      "query": "What are some examples of 'tone'?",
-      "polyseme": "tone",
-      "answer": {
-        "Music": "The song 'Bad Guy' by Billie Eilish is a notable representation of the word 'tone' in music.",
-        "Literature": "In literature, the tone refers to the author's attitude towards the subject. For example, Ernest Hemingway's writing often has a terse and understated tone.",
-        "Language": "In linguistics, tone refers to the use of pitch in speaking to distinguish words or convey meaning. For example, Mandarin Chinese is a tonal language."
-      }
     }
   ],
   [
@@ -1275,7 +1213,7 @@
         "Media and entertainment": "Assassin's Creed Unity, a 2014 action-adventure video game",
         "Music": "Unity Christian Music Festival, a Michigan music festival",
         "Places": "Unity, Saskatchewan, Canada",
-        "People": "Unity Bainbridge (1916~2017), Canadian artist and poet",
+        "People": "Unity Bainbridge, Canadian artist and poet",
         "Politics": "Unity (asylum seekers organisation), a 2005 UK human rights group",
         "Religion": "Unity Church, also known as the Unity School of Christianity",
         "Science and technology": "Unity (mathematics), the number 1",
@@ -1302,7 +1240,7 @@
   ],
   [
     {
-      "query": "What are some different ways to define the 'value'?",
+      "query": "What is a way to define the 'value'?",
       "polyseme": "value",
       "answer": {
         "Finance": "In finance, the value of a company can be determined using various methods such as the discounted cash flow (DCF) analysis, market capitalization, or price-to-earnings (P/E) ratio.",
@@ -1397,11 +1335,11 @@
         "Engineering": "Web (manufacturing), continuous sheets of material passed over rollers.",
         "Films": "Web (2013 film), a documentary.",
         "Literature": "Web (comics), a MLJ comicbook character (created 1942).",
-        "Mathematics": "Web (differential geometry), a type of set allowing an intrinsic Riemannian-geometry characterisation of the additive separation of variables in the Hamilton\u2013Jacobi equation.",
+        "Mathematics": "Web (differential geometry), a type of set allowing an intrinsic Riemannian-geometry characterisation of the additive separation of variables in the Hamilton Jacobi equation.",
         "Music": "Web Entertainment, a record label.",
-        "People": "W. E. B. Du Bois (1868\u20131963), African-American sociologist, historian, civil rights activist, author and editor.",
+        "People": "W. E. B. Du Bois, African-American sociologist, historian, civil rights activist, author and editor.",
         "Radio": "WEBS (AM), a radio station licensed to Calhoun, Georgia, United States.",
-        "Television": "The Web (1950 TV series), a 1950\u20131954 American mystery/suspense anthology television series that was broadcast on CBS."
+        "Television": "The Web (1950 TV series), an American mystery/suspense anthology television series that was broadcast on CBS."
       }
     },
     {
@@ -1458,6 +1396,17 @@
         "Arts and entertainment": "YOLO can be a song title, such as 'YOLO' by The Lonely Island or 'YOLO' by Band-Maid. It can also refer to an album, like 'YOLO' by Dia. Additionally, it has been featured in TV series episodes, such as 'YOLO' in The Simpsons or 'YOLO' in Scandal.",
         "Television": "YOLO can refer to TV series, such as the 2016 Ghanaian TV series 'YOLO' or the 2020 animated series for Adult Swim also titled 'YOLO'. It has also been featured in specific TV series episodes, like 'YOLO' in The Simpsons or 'YOLO' in Scandal.",
         "Science and technology": "YOLO can refer to a type of reflecting telescope called the Yolo telescope, or it can refer to the YOLO algorithm (You Only Look Once), which is an algorithm used for object detection."
+      }
+    },
+    {
+      "query": "What does the word 'YOLO' refer to?",
+      "polyseme": "yolo",
+      "answer": {
+        "Phrases": "YOLO is an aphorism that stands for 'you only live once'. It is often used as a motto to encourage people to take risks and enjoy life to the fullest.",
+        "Places": "YOLO is a county in California, and it is also the former name of Woodland, California.",
+        "Arts and Entertainment": "YOLO is the title of a song by The Lonely Island, as well as a song by Band-Maid. It is also an album by the South Korean pop music group Dia.",
+        "Television": "YOLO is the title of a 2016 Ghanaian TV series, a 2020 animated series for Adult Swim, and an episode of the TV series Scandal.",
+        "Science and Technology": "YOLO is an acronym for 'You Only Look Once', which is an algorithm used in object detection."
       }
     }
   ]

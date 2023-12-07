@@ -5,15 +5,7 @@ from evaluate import load
 import json
 import statistics
 import openai
-from baseline import *
-
-# parser = argparse.ArgumentParser()
-# parser.add_argument('--pred_filepath', type=str, default='./data/gt.json')
-# parser.add_argument('--gt_filepath', type=str, default='./data/predictions/pred.json')
-# parser.add_argument('--metric', default='all', 
-#     choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'])
-# parser.add_argument('--format', default='json', choices=['txt', 'json'])
-# args = parser.parse_args()
+# from baseline import *
 
 def eval_bertscore(pred_sents, gt_sents):
     bertscore = load("bertscore")
@@ -49,7 +41,7 @@ def eval_google_bleu(pred_sents, gt_sents):
 
 
 def eval_gpt(pred_sents, gt_sents):
-    with open('./personal_info/openai_key_jk.txt','r') as f:
+    with open('./personal_info/openai_key_mh2.txt','r') as f:
         OPENAI_API_KEY = f.readline()
 
     openai.api_key = OPENAI_API_KEY
@@ -57,7 +49,7 @@ def eval_gpt(pred_sents, gt_sents):
     model = "gpt-3.5-turbo"
 
     roll = "How well are the information presented in Text1 and Text2 aligned?\n\n"
-    output_format = "Give me a number between 1 (not aligned) to 5 (well aligned)."
+    output_format = "Give me a number 0 if not aligned or 1 if well aligned."
 
     scores = []
 
@@ -84,13 +76,13 @@ def eval_gpt(pred_sents, gt_sents):
                     continue
 
         try:
-            if 0<int(answer)<6:
+            if -1<int(answer)<2:
                 scores.append(int(answer))
         except:
             # print("gpt output is not in int format!")
             continue
         
-    score = sum(scores)/len(scores)*20
+    score = sum(scores)/len(scores)*100
     
     return "gpt_score (%)", score   
 
@@ -103,7 +95,7 @@ def print_result(data):
     pprint.pprint(result)
     print ("*" * 80)
 
-def get_sents(pred_filepath, gt_filepath = args.gt_filepath, format = args.format):
+def get_sents(pred_filepath, gt_filepath, format):
     pred_sents = []
     gt_sents = []
 
@@ -132,6 +124,15 @@ def get_sents(pred_filepath, gt_filepath = args.gt_filepath, format = args.forma
     return pred_sents, gt_sents
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--gt_filepath', type=str, default='./data/gt.json')
+    parser.add_argument('--pred_filepath', type=str, default='./data/predictions/pred.json')
+    parser.add_argument('--metric', default='all', 
+        choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu','gpt'])
+    parser.add_argument('--format', default='json', choices=['txt', 'json'])
+    args = parser.parse_args()
+
     pred_sents, gt_sents = get_sents(args.pred_filepath, args.gt_filepath, args.format)
 
     if args.metric == "all": 
@@ -156,3 +157,6 @@ if __name__ == "__main__":
 
     elif args.metric == "google_bleu":
         print_result(eval_google_bleu(pred_sents, gt_sents))
+    
+    elif args.metric == "gpt":
+        print_result(eval_gpt(pred_sents, gt_sents))

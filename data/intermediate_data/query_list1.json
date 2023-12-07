@@ -8,17 +8,6 @@
                 "Politics and Law": "Absolute monarchy is a monarchical form of government in which the monarch's powers are not limited by a constitution or by the law.",
                 "Philosophy and Theology": "Absolute (philosophy) refers to the philosophical concept of something that is independent and not relative or influenced by other factors."
             }
-        },
-        {
-            "query": "What are the different interpretations of the word 'absolute'?",
-            "polyseme": "absolute",
-            "answer": {
-                "Philosophy": "In philosophy, 'absolute' refers to something that is independent, self-existent, and not dependent on anything else.",
-                "Mathematics": "In mathematics, 'absolute' is used in the context of absolute value, which gives the magnitude or distance of a number from zero.",
-                "Law": "In law, 'absolute' can refer to an unconditional or irrevocable right or claim, such as an absolute right to property.",
-                "Physics": "In physics, 'absolute' can be used to describe a measurement or quantity that is independent of any reference point or scale.",
-                "Language": "In language, 'absolute' can refer to a grammatical construction that is not dependent on another part of the sentence for its meaning, such as an absolute phrase."
-            }
         }
     ],
     [
@@ -31,37 +20,6 @@
                 "Science and technology": "In the field of science and technology, an agent can refer to a software program or algorithm that performs automated tasks or carries out specific functions, such as an intelligent agent or a software agent.",
                 "Computing": "In computing, an agent is a piece of software that acts on behalf of a user or another program, performing tasks or providing services. Examples include user agents, software agents, and intelligent agents."
             }
-        },
-        {
-            "query": "What is an agent?",
-            "polyseme": "agent",
-            "answer": {
-                "Espionage, Investigation, and Law": "An agent in this context refers to a spy or intelligence officer who works undercover to gather information or conduct covert operations.",
-                "Arts and Entertainment": "In fiction, an agent can refer to a character who acts on behalf of another person or organization to accomplish certain tasks.",
-                "Film and Television": "There are several films and TV shows titled 'The Agent', which may refer to different stories or characters involved in various plotlines.",
-                "Music": "Agent can be the name of a band or a song, depending on the specific reference.",
-                "Science and Technology": "In biology, a biological agent refers to a microorganism or pathogen that can be used as a weapon, while in computing, it can refer to a software agent that performs specific tasks.",
-                "Computing": "There are various concepts related to agents in computing, such as agent architecture, agent-based models, intelligent agents, software agents, and user agents."
-            }
-        },
-        {
-            "query": "What are the roles and responsibilities of an 'agent'?",
-            "polyseme": "agent",
-            "answer": {
-                "Real Estate": "In the field of real estate, an agent represents buyers or sellers in property transactions, assists in negotiations, and handles contracts and legal documentation.",
-                "Insurance": "In the insurance industry, an agent is a licensed professional who represents an insurance company and sells insurance policies to individuals or businesses.",
-                "Spying": "When it comes to espionage or intelligence operations, an agent is an individual who works covertly to gather information, usually on behalf of a government or intelligence agency."
-            }
-        }
-    ],
-    [
-        {
-            "query": "What are the different meanings of the word 'amazon'?",
-            "polyseme": "amazon",
-            "answer": {
-                "Geography": "Amazon River, in South America\nAmazon rainforest, a rainforest covering most of the Amazon basin",
-                "Businesses and organizations": "Amazon Bookstore Cooperative, a feminist bookstore (1970\u20132012)\nAmazonen-Werke, a German agricultural machinery manufacturer (founded 1883)"
-            }
         }
     ],
     [
@@ -70,25 +28,7 @@
             "polyseme": "atomic",
             "answer": {
                 "Physics": "Atomic refers to anything related to the atom, the smallest particle of a chemical element that retains its chemical properties. It can refer to the study of the atom in atomic physics or the time period known as the Atomic Age.",
-                "Mathematics": "In order theory, atomic refers to an atom, which is a minimal element in a partially ordered set.",
-                "Cocktails": "Atomic is a champagne cocktail that is made with champagne, vodka, and grenadine.",
-                "Magazines": "Atomic is an Australian computing and technology magazine.",
-                "Skiing": "Atomic is an Austrian ski producer known for manufacturing high-quality skis.",
-                "Music": "Atomic can refer to a Norwegian jazz quintet, an album by Lit, an album by Mogwai, a song by Blondie, or a song by Tiger Army."
-            }
-        },
-        {
-            "query": "What are the different meanings of the word 'atomic'?",
-            "polyseme": "atomic",
-            "answer": {
-                "Physics": "In physics, 'atomic' refers to anything related to the atom, such as atomic physics or the study of the atom.",
-                "Cocktails": "In the context of cocktails, 'atomic' refers to a specific type of champagne cocktail called the Atomic cocktail.",
-                "Magazines": "In the field of publishing, particularly in Australia, 'atomic' is the name of a computing and technology magazine.",
-                "Skiing": "In the skiing industry, 'atomic' is the name of an Austrian ski producer called Atomic Skis.",
-                "Music": "In music, 'atomic' can refer to the Norwegian jazz quintet Atomic or albums with the title 'Atomic' by artists like Lit, Mogwai, or Rockets.",
-                "Mathematics": "In mathematics, 'atomic' can refer to the concept of an atom in order theory, a branch of abstract algebra.",
-                "Historical Periods": "In history, 'atomic' can denote the Atomic Age, also known as the 'Atomic Era', which is the period of time when nuclear power and atomic bombs became significant.",
-                "Distances": "In general usage, 'atomic' can describe distances that are comparable to the dimensions of an atom, known as atomic scale."
+                "Mathematics": "In order theory, atomic refers to an atom, which is a minimal element in a partially ordered set."
             }
         },
         {
@@ -99,74 +39,24 @@
                 "Politics": "In the political realm, one should be cautious of the potential for misuse or weaponization of atomic energy.",
                 "Health": "In terms of health, one should be cautious of the potential for radiation exposure and its effects on the human body."
             }
-        },
-        {
-            "query": "What are some common uses of 'atomic'?",
-            "polyseme": "atomic",
-            "answer": {
-                "Physics": "In physics, the term 'atomic' refers to anything related to atoms or atomic structures. It is used to describe atomic particles, atomic energy, and atomic theories.",
-                "Chemistry": "In chemistry, 'atomic' refers to the properties, behavior, and interactions of atoms. It involves studying atomic structure, atomic bonding, and atomic reactions.",
-                "Computing": "In computing, 'atomic' is often associated with atomic operations or atomic transactions. It refers to operations that are indivisible and ensure data consistency and integrity."
-            }
         }
     ],
     [
         {
-            "query": "How can I achieve a balance in my life?",
+            "query": "How can I achieve a healthy balance in my life?",
             "polyseme": "balance",
             "answer": {
                 "Wellness": "To achieve a healthy balance in life, prioritize self-care activities such as exercise, proper nutrition, and sufficient sleep. It's also essential to allocate time for relaxation and stress reduction.",
-                "Finance": "To maintain a balance in your finances, create a budget, track your expenses, and save a percentage of your income. It's important to balance your spending between essential needs, savings, and discretionary expenses."
-            }
-        },
-        {
-            "query": "What are the different meanings of balance?",
-            "polyseme": "balance",
-            "answer": {
-                "Biomechanics": "In biomechanics, balance refers to the ability to maintain equilibrium and control body movements.",
-                "Accounting": "In accounting, balance refers to the financial statement that shows the company's assets, liabilities, and equity at a specific point in time.",
-                "Mathematics": "In mathematics, balance can refer to the concept of equality or equilibrium in equations or systems.",
-                "Film": "In film, Balance is the title of a Bulgarian film released in 1983 and a short animated film released in 1989.",
-                "Television": "In television, Balance can refer to a Canadian talk show called 'Balance: Television for Living Well' or an episode of the animated series Justice League titled 'The Balance'.",
-                "Music": "In music, Balance can refer to albums by various artists such as Akrobatik, Kim-Lian, Leo Kottke, Joe Morris, Swollen Members, Ty Tabor, Van Halen, and Armin van Buuren.",
-                "Game Design": "In game design, balance refers to the concept and practice of tuning relationships between a game's component systems to ensure fair and enjoyable gameplay.",
-                "Government and Law": "In government and law, Balance can refer to the BALANCE Act, a proposed US federal legislation, or the criterion for fair allocation of seats among parties or states called 'balance apportionment'."
-            }
-        },
-        {
-            "query": "What are the different meanings of 'balance'?",
-            "polyseme": "balance",
-            "answer": {
-                "Biomechanics": "In biomechanics, balance refers to the ability to maintain the body's center of mass within the base of support.",
-                "Accounting": "In accounting, balance refers to the difference between the credits and debits in an account, or the overall financial stability of a company.",
-                "Mathematics": "In mathematics, balance refers to the concept of equality or equilibrium, where both sides of an equation or inequality are equal.",
-                "Film": "In film, Balance (1989 film) is a short animated film notable for its innovative use of stop-motion animation techniques.",
-                "Television": "In television, 'The Balance' is an episode of the animated series Justice League.",
-                "Music": "In music, Balance (Van Halen album) is the eighth studio album by the American rock band Van Halen.",
-                "Game Design": "In game design, balance refers to the tuning of relationships between a game's component systems to ensure fair and enjoyable gameplay.",
-                "Law": "In law, balance can refer to the criterion for fair allocation of seats among parties or states in apportionment.",
-                "Art Installation": "In art, Balance (installation) is a glazed ceramic installation created by artist Tim Ryan in 2013."
+                "Finance": "To maintain a healthy balance in your finances, create a budget, track your expenses, and save a percentage of your income. It's important to balance your spending between essential needs, savings, and discretionary expenses."
             }
         }
     ],
     [
         {
-            "query": "What are the different meanings of the word 'band'?",
-            "polyseme": "band",
-            "answer": {
-                "Places": "Band, Iran is a village in Urmia County, West Azerbaijan Province, Iran.",
-                "Arts, entertainment, and media": "A band is a group of people who perform instrumental or vocal music.",
-                "Clothing, jewelry, and accessories": "A band can refer to an armband, a smart band, or a wedding band.",
-                "Military": "Bands (Italian Army irregulars) were military units in the service of the Italian 'Regio Esercito'.",
-                "Science and technology": "In science and technology, a band can refer to a range of frequencies or wavelengths in radio and radar, or the electronic band structure of electrons in solid-state physics."
-            }
-        },
-        {
-            "query": "What are some popular uses of 'band'?",
+            "query": "What is the meaning of 'band'?",
             "polyseme": "band",
             "answer": {
                 "Music": "A band is a group of musicians who perform together, often with multiple instrumentalists and vocalists. Popular bands include The Beatles, Queen, and Coldplay.",
-                "Fitness": "A resistance band is a popular fitness tool used for strength training and stretching exercises. It provides resistance to help build muscle and improve flexibility.",
                 "Geology": "In geology, a band refers to a distinct layer or stripe of rock or mineral within a larger formation. These bands can indicate different geological processes or variations in composition.",
                 "Fashion": "A band can refer to a narrow strip of fabric or material used to hold or fasten something, such as a watch band or a headband.",
                 "Communication": "A band can also refer to a specific range of frequencies used for communication purposes, such as a radio band or a Wi-Fi band."
@@ -182,85 +72,22 @@
                 "Science and technology": "In river morphology, a bar refers to a deposit of sediment.",
                 "Computing": "In computer science, a bar can be a placeholder or a type of graphical control element.",
                 "Law": "In the legal profession, the bar refers to the legal community or a bar association.",
-                "Media and entertainment": "There are various TV series and songs with the name 'bar' in their titles.",
-                "Language": "In linguistics, bar can refer to a diacritic on a letter or be part of X-bar theory.",
-                "Transportation": "Bar can refer to railroad companies, train stations, or airport codes.",
-                "Firearms": "There are specific models of rifles with 'bar' in their names."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'bar'?",
-            "polyseme": "bar",
-            "answer": {
-                "Law": "In legal terms, a bar refers to the collective body of lawyers in a jurisdiction or the physical barrier separating the courtroom from the public.",
-                "Food and Beverages": "In the context of food and beverages, a bar can be a place where alcoholic beverages are served or a unit of pressure used in measuring atmospheric pressure.",
-                "Music": "In music, a bar refers to a segment of time in a musical piece, also known as a measure."
+                "Language": "In linguistics, bar can refer to a diacritic on a letter or be part of X-bar theory."
             }
         }
     ],
     [
         {
-            "query": "What are the different types of bark?",
+            "query": "What is the meaning of 'bark'?",
             "polyseme": "bark",
             "answer": {
-                "Botany": "In botany, bark refers to the protective outer layer of a woody plant, such as a tree or stick.",
-                "Sound": "In the context of animal vocalizations, bark is a common sound made by dogs.",
-                "Food": "In the culinary world, almond bark and peppermint bark are confections made with chocolate and various toppings.",
-                "Places": "Bark is the name of a municipality in Germany, a village in Poland, and several lakes and rivers in Canada and the United States.",
-                "Arts and Entertainment": "Bark is the title of a 1971 album by Jefferson Airplane, a short story collection by Lorrie Moore, and a character in the Sonic the Hedgehog series."
-            }
-        },
-        {
-            "query": "What are the different types of 'bark'?",
-            "polyseme": "bark",
-            "answer": {
-                "Botany": "In botany, 'bark' refers to the protective outer layer of a woody plant, such as the bark of a tree.",
                 "Sound": "In terms of animal vocalization, 'bark' is a common sound produced by dogs.",
-                "Film": "In the film 'Bark!' released in 2002, 'bark' may refer to the title or a reference to a dog",
                 "Food": "In the realm of food, 'bark' can be used to describe confections such as almond bark or peppermint bark.",
-                "Geography": "There are several locations with the name 'Bark', including Bark, Germany and Bark Lake in Ontario, Canada.",
-                "Literature": "Lorrie Moore's short story collection titled 'Bark' could be an example in literature.",
-                "Video Games": "Bark the Polar Bear is a character in the Sonic the Hedgehog series.",
-                "Music": "Two albums named 'Bark' come to mind \u2013 'Bark' by Jefferson Airplane and 'Bark' by Blackie and the Rodeo Kings."
-            }
-        },
-        {
-            "query": "What are some different meanings of the word 'bark'?",
-            "polyseme": "bark",
-            "answer": {
-                "Nature": "In nature, 'bark' refers to the protective outer covering of tree trunks and branches.",
-                "Animal Behavior": "In animal behavior, 'bark' typically refers to the vocalization made by dogs, foxes, and certain other animals.",
-                "Boating": "In boating, 'bark' can refer to a small sailing vessel with three masts, often used for coastal trading."
+                "Geography": "There are several locations with the name 'Bark', including Bark, Germany and Bark Lake in Ontario, Canada."
             }
         }
     ],
     [
-        {
-            "query": "What are the different meanings of the word 'base'?",
-            "polyseme": "base",
-            "answer": {
-                "Brands and enterprises": "Base (mobile telephony provider), a Belgian mobile telecommunications operator",
-                "Computing": "BASE (search engine), Bielefeld Academic Search Engine",
-                "Mathematics": "Base of computation, commonly called radix, the number of distinct digits in a positional numeral system",
-                "Organizations": "BASE (social centre), a self-managed social centre in Bristol, UK",
-                "Science and technology": "Base (chemistry), a substance that can accept hydrogen ions (protons)",
-                "Social science": "Base (politics), a group of voters who almost always support a single party's candidates",
-                "Sports": "Base (baseball), a station that must be touched by a runner"
-            }
-        },
-        {
-            "query": "What is the meaning of 'base'?",
-            "polyseme": "base",
-            "answer": {
-                "Brands and enterprises": "Base CRM is an enterprise software company that provides customer relationship management solutions.",
-                "Computing": "The <base></base> tag is an HTML element used to specify the base URL for all relative URLs in a document.",
-                "Mathematics": "In mathematics, the base of a logarithm is the number whose logarithm is 1.",
-                "Organizations": "BASE is a social center in Bristol, UK that is self-managed by the community.",
-                "Science and technology": "In chemistry, a base is a substance that can accept hydrogen ions.",
-                "Social science": "In politics, a base refers to a group of voters who consistently support a specific party's candidates.",
-                "Sports": "In baseball, a base is a station that a runner must touch to score a run."
-            }
-        },
         {
             "query": "How can I improve my skills at base?",
             "polyseme": "base",
@@ -285,52 +112,7 @@
     ],
     [
         {
-            "query": "What are the different types of batteries available for consumer use?",
-            "polyseme": "battery",
-            "answer": {
-                "Electric Battery": "Lithium-ion batteries are commonly used in smartphones and laptops for their high energy density and rechargeable capability.",
-                "Law": "In the context of tort law, battery refers to the intentional harmful or offensive contact between individuals.",
-                "Military and Naval Uses": "Artillery batteries consist of organized groups of artillery pieces used in military operations.",
-                "Music": "Battery is a song by Metallica from their album Master of Puppets.",
-                "Places": "The Battery, also known as Battery Park, is a landmark park in Manhattan, New York.",
-                "Battery Island": "Battery Island is an island located in Tasmania, Australia."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'battery'?",
-            "polyseme": "battery",
-            "answer": {
-                "Electricity": "A battery is commonly used as a power source for electronic devices such as cell phones and laptops.",
-                "Law": "Battery is a term used in the legal system to describe a crime involving physical contact.",
-                "Military": "In the military, a battery can refer to a group of artillery pieces or the primary weapons on a warship.",
-                "Music": "In music, battery can refer to a band or group of drums.",
-                "Places": "Battery Park in New York City is a popular tourist destination and a common use of the word 'battery' in a place name."
-            }
-        }
-    ],
-    [
-        {
-            "query": "What are the different types of beams?",
-            "polyseme": "beam",
-            "answer": {
-                "Science and Technology": "BEAM robotics, also known as biology, electronics, aesthetics, and mechanics robotics, is a style of robotics that combines principles from these different fields to create innovative robotic designs.",
-                "Arts, Entertainment and Media": "In the context of arts and entertainment, a beam refers to a connection line in musical notation. It is used to connect multiple notes of the same pitch, indicating that they should be played as a single sustained note.",
-                "Businesses": "Beam Suntory, a division of Suntory, is a well-known company in the distilled beverages industry. They produce popular brands like Jim Beam.",
-                "Streams of Particles or Energy": "A light beam, or beam of light, is a directional projection of light energy. It can also refer to other types of beams such as laser beams, radio beams, particle beams, and X-ray beams."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'beam'?",
-            "polyseme": "beam",
-            "answer": {
-                "Streams of particles or energy": "A laser beam is commonly used in laser cutting and welding processes in manufacturing.",
-                "Arts, Entertainment, and Media": "The song 'Beam Me Up' by Pink is a popular representation of the word in music.",
-                "Businesses": "Jim Beam is a well-known brand of bourbon whiskey produced by Beam Suntory.",
-                "Science and Technology": "A beam search algorithm is commonly used in natural language processing for generating text."
-            }
-        },
-        {
-            "query": "What are some applications of 'beam'?",
+            "query": "What is an application of beam?",
             "polyseme": "beam",
             "answer": {
                 "Engineering and Construction": "In engineering and construction, beams are used to support heavy loads and distribute weight in structures such as bridges and buildings.",
@@ -341,27 +123,7 @@
     ],
     [
         {
-            "query": "What are the different meanings of the word 'beat'?",
-            "polyseme": "beat",
-            "answer": {
-                "People": "In the context of people, 'beat' can refer to a Swiss German male given name or various record producers and musicians with the name 'Beat'.",
-                "Music": "In the field of music, 'beat' can refer to the basic time in music and music theory, a popular music genre, or a rhythmic pattern.",
-                "Transportation": "In transportation, 'beat' can refer to a ride-hailing app, a model of paramotor, or specific car models like Chevrolet Beat or Honda Beat."
-                }
-        },
-        {
-            "query": "What are the different meanings of the word 'beat'?",
-            "polyseme": "beat",
-            "answer": {
-                "People": "Beat (name), a Swiss German male given name",
-                "Arts, entertainment and media": "Fictional characters",
-                "Film": "Beat (1997 film), a South Korean action film",
-                "Music channels": "Beats Music, an Apple music streaming service",
-                "Transportation": "Beat (app), a ride-hailing app"
-            }
-        },
-        {
-            "query": "What are some different meanings of the word 'beat'?",
+            "query": "What is the meaning of the word 'beat'?",
             "polyseme": "beat",
             "answer": {
                 "Music": "In music, a beat refers to the basic unit of rhythm in a piece of music.",
@@ -373,49 +135,16 @@
     ],
     [
         {
-            "query": "What are the different types of benches and their uses?",
+            "query": "What is bench?",
             "polyseme": "bench",
             "answer": {
                 "Furniture": "A bench (furniture) is a long seat commonly used for seating multiple people. It can be found in parks, gardens, and public spaces.",
                 "Geology": "In geology, a bench is a long strip of relatively level land with steeper slopes above and below it. It can be formed by natural processes or cut into the side of open-pit mines.",
-                "Law and politics": "In law, a bench refers to the location where a judge sits in a courtroom. It can also refer to the group of judges hearing a case. The term 'bench' is also used to represent the judiciary as a whole.",
-                "People": "Johnny Bench is a former professional baseball player known for his success as a catcher. Jo Bench is an English death metal bass player.",
-                "Places": "Bench, Idaho is a location in the United States. Bench (woreda) is a district in Ethiopia.",
-                "Spoken": "Bench language is spoken in the Bench Maji Zone of Ethiopia. The Bench people are an ethnic group in Ethiopia who speak the Bench language."
-            }
-        },
-        {
-            "query": "What are the different uses of a 'bench'?",
-            "polyseme": "bench",
-            "answer": {
-                "Furniture": "A bench is often used as a seating option in parks, gardens, and public spaces.",
-                "Sports": "In sports such as weightlifting or gymnastics, a bench is used for exercises like bench press or bench dips.",
-                "Legal": "In the legal field, a bench refers to the seat occupied by a judge or magistrate in a court of law."
+                "Law and politics": "In law, a bench refers to the location where a judge sits in a courtroom. It can also refer to the group of judges hearing a case. The term 'bench' is also used to represent the judiciary as a whole."
             }
         }
     ],
     [
-        {
-            "query": "What are the different meanings of the word 'block'?",
-            "polyseme": "block",
-            "answer": {
-                "Arts, entertainment and media": "Block programming is a programming strategy in broadcasting where similar shows or content are scheduled together in a block of time.",
-                "Music": "Blocks Recording Club is a record label that focuses on experimental and avant-garde music.",
-                "Toys": "Toy blocks are small pieces of wood or plastic that children can use to build structures.",
-                "Video game": "Blocked is a puzzle game for the iPhone and iPod Touch where players have to navigate through obstacles to reach the goal.",
-                "Building and construction": "A breeze block, also known as a cinder block or cement block, is a commonly used concrete masonry unit in construction.",
-                "Land subdivisions": "In rural Australia, a block refers to a small agricultural landholding.",
-                "Places": "Block Island is an island located in the state of Rhode Island in the United States.",
-                "Science and technology": "In meteorology, a block refers to large-scale patterns in the atmospheric pressure field.",
-                "Computing": "In computing, a block is a group of declarations and statements treated as a unit in programming.",
-                "Engineering": "An engine block, also known as a cylinder block, is the main part of an internal combustion engine.",
-                "Medicine": "A nerve block is a deliberate interruption of signals traveling along a nerve, often used for pain relief.",
-                "Mathematics": "In graph theory, a block is a maximal biconnected subgraph of a graph.",
-                "Sports": "In basketball, a block occurs when a defensive player legally deflects a shot from the opposing team.",
-                "Transportation": "In aviation, a block number is a system used to differentiate between groups of aircraft of the same type with minor variants.",
-                "People": "Block (Jamie Block) is an anti-folk musician based in New York, US."
-            }
-        },
         {
             "query": "What is the purpose of a block?",
             "polyseme": "block",
@@ -428,154 +157,49 @@
     ],
     [
         {
-            "query": "What is the purpose of a circuit board?",
+            "query": "What is the purpose of a board?",
             "polyseme": "board",
             "answer": {
                 "Electronics": "A circuit board is a physical board that holds and connects electronic components, such as resistors, capacitors, and integrated circuits, to create a functional electronic circuit.",
                 "Manufacturing": "In manufacturing, a circuit board is used as a platform to assemble and test electronic devices or products.",
-                "Gaming": "In gaming, a circuit board is the main board that houses the hardware components of a gaming console or computer.",
-                "Education": "In education, a circuit board is used as a teaching tool to demonstrate and explain the principles of electronics and circuitry.",
-                "Companies": "In the context of companies, a circuit board is a critical component in the production of electronic goods and devices.",
+                "Gaming": "In gaming, a board is the main board that houses the hardware components of a gaming console or computer.",
                 "Healthcare": "In healthcare, a circuit board may refer to the main electronic board used in medical equipment, such as patient monitors or diagnostic devices."
-            }
-        },
-        {
-            "query": "What are the different types of 'board' used in various fields?",
-            "polyseme": "board",
-            "answer": {
-                "Education": "In the field of education, there are various types of boards such as the School Board, Examination Board, and Curriculum Development Board.",
-                "Sports": "In sports, there are different types of boards like the Skateboard, Snowboard, and Surfboard that are used for various activities and competitions.",
-                "Business": "In the business field, 'board' can refer to the Board of Directors, which is responsible for making important decisions and providing strategic direction to a company."
             }
         }
     ],
     [
         {
-            "query": "What is a bolt?",
-            "polyseme": "bolt",
-            "answer": {
-                "Implements and technology": "A bolt is a threaded shaft used to clamp two components together.",
-                "Arts, entertainment, and media": "Bolt is a Disney animated film released in 2008, featuring a dog named Bolt as the main character.",
-                "Businesses and organizations": "Bolt is an Estonian transportation network company.",
-                "Computing": "Bolt is a network protocol used in database applications.",
-                "Places": "Bolt is an unincorporated census-designated place in West Virginia, United States.",
-                "Sports": "Bolt is a secondary nickname for the Los Angeles Chargers, a National Football League team.",
-                "Vehicles": "Bolt is a subcompact electric hatchback produced by Chevrolet."
-            }
-        },
-        {
-            "query": "What are the different meanings of 'bolt'?",
-            "polyseme": "bolt",
-            "answer": {
-                "Implements and technology": "A thunderbolt is a powerful electrical discharge in the atmosphere.",
-                "Arts, entertainment, and media": "Bolt is a Disney animated film released in 2008, featuring a white dog named Bolt as the main character.",
-                "Businesses and organizations": "Bolt is an Estonian transportation network company that provides ride-hailing services.",
-                "Computing": "Bolt is a network protocol used in database applications.",
-                "Places": "Bolt, West Virginia is an unincorporated census-designated place in the United States.",
-                "Sports": "Usain Bolt is a Jamaican sprinter, widely considered to be the fastest human in the world.",
-                "Vehicles": "Chevrolet Bolt EV is an electric hatchback car produced by General Motors.",
-                "Miscellaneous": "A bolt of lightning is a sudden and powerful discharge of electricity in the atmosphere."
-            }
-        },
-        {
-            "query": "What are the different uses of the word 'bolt'?",
+            "query": "What is the meaning of 'bolt'?",
             "polyseme": "bolt",
             "answer": {
                 "Construction": "In construction, a bolt is a type of fastener used to join two or more components together. It typically consists of a threaded cylinder with a head at one end and is tightened with a wrench.",
                 "Sports": "In sports, a bolt refers to a very fast athlete, often used to describe someone who excels in sprinting events.",
-                "Weather": "In weather terminology, a bolt refers to a flash of lightning accompanied by thunder. It is often associated with thunderstorms and can be a safety hazard during outdoor activities.",
-                "Hardware": "In computer hardware, a bolt is a type of secure stand or mount used to hold components in place. It is commonly used in rack-mounted servers and networking equipment."
+                "Implements and technology": "A thunderbolt is a powerful electrical discharge in the atmosphere."
             }
         }
     ],
     [
         {
-            "query": "What is a bond?",
+            "query": "How can I calculate a bond?",
             "polyseme": "bond",
             "answer": {
-                "Finance": "A bond is a type of debt security that represents a loan made by an investor to a borrower, typically a government or corporation. It is used to raise capital and pays periodic interest payments to the bondholder.",
-                "Chemistry": "In chemistry, a bond refers to the attraction between atoms, ions, or molecules that allows them to form chemical compounds. These bonds can be covalent, ionic, or metallic.",
-                "Emotional": "An emotional bond is an attachment or connection between individuals that is based on feelings of affection, trust, and mutual understanding. It can exist between family members, friends, or romantic partners.",
-                "Entertainment": "James Bond is a fictional character created by Ian Fleming, who is a British secret agent known for his adventures in novels and films. The Bond series has become a popular franchise in the entertainment industry.",
-                "Places": "Bond Street is a major shopping street in the West End of London, England. It is known for its luxury boutiques and high-end fashion stores.",
-                "Brands": "Bonds is an Australian clothing company that specializes in underwear, socks, and clothing for men, women, and children. It is a well-known brand in Australia.",
-                "Education": "Bond University is a private university located on the Gold Coast in Australia. It offers undergraduate and postgraduate programs in various fields of study.",
-                "Organizations": "Bond is the membership body for UK-based NGOs working in international development. It represents and supports British overseas NGOs for development.",
-                "People": "Bond is a common surname, and there are several individuals with this last name. Mr. Bond is an Austrian rapper known for his music.",
-                "Outer Space": "Bond is a crater on Mars, which is a visible depression on the surface of the planet."
-            }
-        },
-        {
-            "query": "What are the different meanings of the word 'bond'?",
-            "polyseme": "bond",
-            "answer": {
-                "Common meanings": "Bond (finance), a type of debt security",
-                "People": "Bond (surname)",
-                "Arts and entertainment": "James Bond, a series of works about the eponymous fictional character",
-                "Places": "Bond Street, a major shopping street in the West End of London",
-                "Brands and enterprises": "Bonds (clothing), Australian clothing company",
-                "Education": "Bond University, Gold Coast, Australia",
-                "Organizations": "British Overseas NGOs for Development, operating as Bond, the membership body for UK-based NGOs working in international development"
+                "Finance": "To calculate the yield to maturity for a bond, you can use the following formula: Yield to Maturity = [(Face Value / Price) ^ (1 / Years to Maturity)] - 1",
+                "Chemistry": "In chemistry, a chemical bond refers to the force that holds atoms together in a molecule. It can be covalent, ionic, or metallic, depending on the nature of the atoms involved."
             }
         }
     ],
     [
-        {
-            "query": "What is a buffer?",
-            "polyseme": "buffer",
-            "answer": {
-                "Science": "A buffer is a solution used to prevent changes in pH by maintaining a stable hydrogen ion concentration.",
-                "Technology and engineering": "A buffer is a device that cushions impacts between vehicles, such as in rail transport.",
-                "Computing": "A buffer is a temporary storage area in memory used to hold data while it is being transferred, such as in data buffering.",
-                "People": "Buffer can refer to Bruce Buffer, an American sports announcer for UFC events."
-            }
-        },
         {
             "query": "What is the purpose of a buffer?",
             "polyseme": "buffer",
             "answer": {
                 "Science": "A buffer is used in science to maintain a stable pH level in a solution, preventing drastic changes in acidity or alkalinity.",
                 "Technology and Engineering": "In technology and engineering, a buffer is used to absorb or dissipate energy, preventing damage or reducing impact forces.",
-                "Computing": "In computing, a buffer is used to temporarily store data during the transmission or processing of information.",
-                "People": "Bruce Buffer is a famous sports announcer known for his energetic introductions at UFC events."
-            }
-        },
-        {
-            "query": "What are the different uses of 'buffer'?",
-            "polyseme": "buffer",
-            "answer": {
-                "Computer Science": "In computer science, a buffer is a temporary storage area that holds data while it is being transferred between two devices or processes. It helps to smooth out the flow of data and prevent data loss or bottlenecking.",
-                "Chemistry": "In chemistry, a buffer is a solution that resists changes in pH levels, helping to maintain a stable pH when acid or base is added to the solution.",
-                "Transportation": "In transportation, a buffer is a zone or area used to separate or absorb the impact of collisions or accidents, providing a safety margin for vehicles and pedestrians."
+                "Computing": "In computing, a buffer is used to temporarily store data during the transmission or processing of information."
             }
         }
     ],
     [
-        {
-            "query": "What are the different meanings of the word 'bug'?",
-            "polyseme": "bug",
-            "answer": {
-                "Biology": "A terrestrial arthropod animal (with at least six legs)",
-                "Arts, entertainment and media": "Bug (comics), a superhero in Marvel comics",
-                "Film and television": "Bug (1975 film), an American horror film",
-                "Gaming": "Bug (poker), a limited form of wild card",
-                "Music": "Bug (Dave Davies album), 2002",
-                "Businesses and organizations": "Bicycle User Group, a group set up to promote cycling issues",
-                "People": "Bug Hall (born 1985), an American actor",
-                "Places": "Bug (river) or Western Bug, a river in Poland, Ukraine and Belarus",
-                "Science and technology": "Slipper lobster (Scyllaridae), a number of species of which are called 'bug'",
-                "Transportation": "Bond Bug, a British three-wheeled car"
-            }
-        },
-        {
-            "query": "How can I fix the 'bug' in my software code?",
-            "polyseme": "bug",
-            "answer": {
-                "Entomology": "To fix a bug in your software code, you need to identify and correct the error in the code logic. Debugging tools and techniques can help in locating and resolving the bug.",
-                "Medical": "In the medical field, a bug refers to an insect or small creature that can cause diseases or infect humans. To prevent bug bites, use insect repellent and keep the living spaces clean and free from insects.",
-                "Film and Television": "In the context of film and television production, a bug refers to a small hidden microphone used to capture audio without being visible on camera. These bugs are often used in surveillance or investigative scenes."
-            }
-        },
         {
             "query": "How can I eliminate the bug?",
             "polyseme": "bug",
@@ -587,7 +211,7 @@
     ],
     [
         {
-            "query": "What are the functions of 'capital'?",
+            "query": "What is the function of capital?",
             "polyseme": "capital",
             "answer": {
                 "Economics": "In economics, capital refers to financial assets or resources that are used to generate income or produce goods and services.",
@@ -598,130 +222,28 @@
     ],
     [
         {
-            "query": "What is the carrier?",
-            "polyseme": "carrier",
-            "answer": {
-                "Entertainment": "Carrier (album), a 2013 album by The Dodos",
-                "Science": "Carrier protein, a protein that facilitates the transport of another molecule",
-                "Technology": "Aircraft carrier, a warship primarily hosting fixed-wing aircraft"
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'carrier'?",
-            "polyseme": "carrier",
-            "answer": {
-                "Entertainment": "Carrier (album), a 2013 album by The Dodos",
-                "Science": "Carrier protein, a protein that facilitates the transport of another molecule",
-                "Technology": "Wireless carrier, an organization that operates a wireless network for mobile phones"
-            }
-        }
-    ],
-    [
-        {
-            "query": "What are the different types of cases in the legal field?",
-            "polyseme": "case",
-            "answer": {
-                "Business, finance, and law": "In the legal field, there are various types of cases, including criminal cases, civil cases, family law cases, personal injury cases, employment law cases, and intellectual property cases.",
-                "Education": "In policy debate, a case refers to the set of arguments presented by a team in support of their position on a given topic.",
-                "Language and linguistics": "In linguistics, a case refers to a grammatical category that indicates the relationship between a noun or pronoun and other words in a sentence.",
-                "Science, technology, and mathematics": "In computer science, a switch statement is a control statement used to select one of many code blocks to be executed based on the value of a variable or expression."
-            }
-        },
-        {
             "query": "What is the meaning of the word 'case'?",
             "polyseme": "case",
             "answer": {
-                "Containers": "Case (goods), a package of related merchandise",
-                "Places": "Case, Laclede County, Missouri",
-                "People": "Case (name), people with the surname (or given name)",
-                "Arts, Entertainment, and Media": "The Case (2007), a Chinese film",
                 "Business, finance, and law": "Business case, capturing the reasoning for initiating a project",
                 "Education": "Case (policy debate), in debate competition",
-                "Language and linguistics": "Grammatical case, a common form of morphosyntactic inflection",
-                "Science, technology, and mathematics": "Computer-assisted structure elucidation, for molecular geometry"
+                "Language and linguistics": "Grammatical case, a common form of morphosyntactic inflection"
             }
         }
     ],
     [
         {
-            "query": "What are the different meanings of the word 'cell'?",
+            "query": "What is cell?",
             "polyseme": "cell",
             "answer": {
                 "Biology": "In biology, a cell is the functional basic unit of life.",
-                "Arts, Entertainment, and Media": "In arts, entertainment, and media, 'cell' can refer to a Marvel comic book character or a character in the manga series Dragon Ball.",
-                "Literature": "In literature, 'cell' can refer to a horror novel by Stephen King or a poem by Rudyard Kipling.",
-                "Music": "In music, 'cell' can refer to a small rhythmic and melodic design, an album by Plastic Tree, or a song composed by G. F. Cobb.",
-                "Other Arts, Entertainment, and Media": "In other arts, entertainment, and media, 'cell' can refer to a psychological thriller film starring Jennifer Lopez or an episode of TV series like The Vampire Diaries or The Walking Dead.",
-                "Groups of People": "In the context of groups of people, 'cell' can refer to a group in a cell group or a unit of a clandestine cell system.",
                 "Rooms": "In the context of rooms, 'cell' can refer to a small room in which a religious recluse lives or a room used to hold people in prisons.",
                 "Science, Mathematics, and Technology": "In science, mathematics, and technology, 'cell' can refer to a microprocessor architecture, a unit in a database table or spreadsheet, a wireless connection, or a basic unit of computer memory.",
                 "Mathematics": "In mathematics, 'cell' can refer to a three-dimensional element, an element of an abstract cell complex, a basic unit of a cellular automaton, or a k-face of a simplicial complex."
             }
-        },
-        {
-            "query": "What are the main functions of a cell?",
-            "polyseme": "cell",
-            "answer": {
-                "Biology": "The main functions of a cell include maintaining homeostasis, obtaining and using energy, replicating DNA, and carrying out specific cellular processes.",
-                "Music": "In music, a cell refers to a small rhythmic and melodic design that can be isolated or can make up one part of a thematic context.",
-                "Computing and Telecommunications": "In computing, a cell is a unit in a database table or spreadsheet, formed by the intersection of a row and a column.",
-                "Rooms": "In the context of rooms, a monastic cell is a small room, hut, or cave in which a religious recluse lives.",
-                "Mathematics": "In mathematics, a cell refers to a three-dimensional element that is part of a higher-dimensional object."
-            }
-        },
-        {
-            "query": "What are the different types of 'cell'?",
-            "polyseme": "cell",
-            "answer": {
-                "Biology": "In biology, the different types of cells include prokaryotic cells, eukaryotic cells, plant cells, animal cells, and bacterial cells.",
-                "Technology": "In technology, the different types of cells include lithium-ion cells, alkaline cells, solar cells, and fuel cells.",
-                "Prison": "In the context of the prison system, cells refer to the individual rooms where prisoners are housed."
-            }
         }
     ],
     [
-        {
-            "query": "What is the definition of 'center'?",
-            "polyseme": "center",
-            "answer": {
-                "Mathematics": "In geometry, the center is the middle point of an object.",
-                "Sports": "In sports, 'center' refers to the positions in football (American and Canadian), Australian rules football, basketball, ice hockey, rugby league, and rugby union."
-            }
-        }
-    ],
-    [
-        {
-            "query": "What are the different types of channels in communication?",
-            "polyseme": "channel",
-            "answer": {
-                "Science and technology": "In the context of science and technology, channels can also refer to ion channels. These are proteins that allow the flow of ions across cell membranes, playing a crucial role in various physiological processes.",
-                "Business and legal terms": "In the context of business and legal terms, channels refer to distribution channels. These are the paths through which products or services are delivered from the producer to the consumer. Examples of distribution channels include direct sales, retail stores, e-commerce platforms, and wholesalers.",
-                "Arts, entertainment, and media": "In the arts, entertainment, and media industry, channels can refer to television channels or broadcasting channels. These are platforms or networks that transmit television programs or radio broadcasts to viewers or listeners. Examples include ABC, NBC, BBC, and CNN.",
-                "Sports": "In the field of sports, channels can refer to specific areas of the pitch in football (soccer). For example, the left channel and right channel are commonly used terms to describe the areas on the field where players operate or make runs.",
-                "Other uses": "In traditional Chinese medicine, channels are referred to as meridians. These are pathways through which vital energy (qi) flows in the body. Acupuncture and other techniques aim to balance the flow of energy through these channels."
-            }
-        },
-        {
-            "query": "How can I watch the English Channel live?",
-            "polyseme": "channel",
-            "answer": {
-                "Television": "You can watch the English Channel live on BBC or ITV.",
-                "Geography": "To watch the English Channel live, you can visit a coastal town in France or England and look out at the sea.",
-                "Science and Technology": "There are live streaming channels on various video-sharing websites where you can watch the English Channel live.",
-                "Business and Legal Terms": "There are streaming platforms that offer live coverage of the English Channel, but you might need a subscription to access the content.",
-                "Sports": "You can watch a live football match on the English Channel.",
-                "Other uses": "The English Channel is a popular spot for mediumship or channelling, where people claim to communicate with spirits."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'channel'?",
-            "polyseme": "channel",
-            "answer": {
-                "Television": "In television, a channel refers to a specific broadcast frequency or network where programs and shows are aired.",
-                "Communication": "In communication, a channel can refer to a pathway or medium through which information or messages are transmitted, such as a telephone line or email.",
-                "Water Management": "In water management, a channel is a man-made or natural waterway that directs the flow of water, such as a canal or river channel."
-            }
-        },
         {
             "query": "How many channels it have?",
             "polyseme": "channel",
@@ -738,10 +260,7 @@
             "query": "What is the meaning of character?",
             "polyseme": "character",
             "answer": {
-                "Arts, entertainment, and media": "In literature, character refers to a person or entity portrayed in a novel or story. It can also refer to a set of character sketches in classical Greek literature.",
-                "Music": "In music, character can refer to an album title, such as 'Characters' by John Abercrombie or 'Character' by Dark Tranquillity.",
                 "Types of entity": "In the context of arts, character refers to an agent within a work of art, such as a novel, drama, or video game. It can also refer to a character sketch or description of a character type.",
-                "Other uses in arts, entertainment, and media": "In film, 'Character' is a Dutch film based on the novel by Ferdinand Bordewijk. It can also refer to a monthly magazine called 'Charaktery' in Poland or a sketch comedy show on Netflix called 'Netflix Presents: The Characters'.",
                 "Mathematics": "In mathematics, character can refer to a homomorphism from a group to a field, or the logical equivalency between objects of two different domains. It is also associated with character theory and specific types of characters in number theory.",
                 "Morality and social science": "In the context of morality and social science, character can refer to character education, which is values education in the US. It can also refer to a person's traits or an evaluation of an individual's durable moral qualities."
                 }
@@ -758,55 +277,15 @@
     ],
     [
         {
-            "query": "What is the definition of 'charge'?",
-            "polyseme": "charge",
-            "answer": {
-                "Arts, Entertainment, and Media": "Charge, Zero Emissions/Maximum Speed is a documentary film released in 2011.",
-                "Music": "Charge is an album released by David Ford.",
-                "Television": "Charge is a TV series.",
-                "Companies": "Charge Automotive Limited is an electric-vehicle manufacturer.",
-                "Finance": "Equitable charge is a legal concept that confers a right on the secured party to look to a particular asset in the event of the debtor's default.",
-                "Law": "Criminal charge refers to a formal accusation made before a court by a prosecuting authority.",
-                "Mathematics, Science, and Technology": "Charge in physics refers to the susceptibility of a body to one of the fundamental forces.",
-                "Military and Iconography": "Charge in warfare is a military maneuver.",
-                "Sports": "Charge in basketball refers to illegal contact by pushing or moving into another player's torso."
-            }
-        },
-        {
             "query": "How can I protect myself from charge?",
             "polyseme": "charge",
             "answer": {
-                "Electricity": "To protect yourself from an electric charge, it is important to wear insulated gloves and shoes, use proper grounding techniques, and avoid contact with live electrical circuits.",
                 "Law": "In the legal context, protecting oneself from a criminal charge requires hiring a skilled defense attorney, understanding and exercising legal rights, and presenting a strong defense strategy.",
                 "Finance": "Protecting oneself from excessive financial charges involves practicing good money management, avoiding high-interest debts, and understanding the terms and conditions of financial agreements."
             }
         }
     ],
     [
-        {
-            "query": "What are the different meanings of the word 'check'?",
-            "polyseme": "check",
-            "answer": {
-                "Places": "Check, Virginia is a small town located in Floyd County, Virginia.",
-                "Arts, entertainment, and media": "Check is a 2021 Indian Telugu-language film. The Checks is also an episode of the TV show Seinfeld.",
-                "Games and sports": "In chess, a check is a threat to capture the king or general. In poker, 'check' means declining to bet. In ice hockey, checking refers to several techniques used to impede the progress of an opponent. It can also refer to a poker chip.",
-                "Music": "There are several songs titled 'Check' by different artists such as Meek Mill, Young Thug, Chris Janson, E-40, Kojo Funds, Lil Durk, Max Webster, Nas and Rick Ross, Quin NFN, Qveen Herby, Rustic Overtones, U.S.D.A., and Zebrahead. The Checks is also the name of a New Zealand band.",
-                "Computing": "Check is a mobile banking application. It is also a penetration testing certification run by CESG called the CHECK Scheme. Checkbox is a type of widget in computing.",
-                "Patterns": "Check (or 'Chequered') is a pattern of squares, often used on chess boards and fabrics. Tartan is a checked pattern commonly found in fabric and weaving."
-                }
-        },
-        {
-            "query": "How can I check my bank balance using a mobile app?",
-            "polyseme": "check",
-            "answer": {
-                "Computing": "You can check your bank balance using a mobile banking application such as Check, which allows you to log in to your account and view your balance.",
-                "Games and Sports": "In ice hockey, checking refers to several techniques used to impede the progress of an opposing player. It does not pertain to checking bank balances.",
-                "Arts, Entertainment, and Media": "The film 'Check' is not related to checking bank balances. It is an Indian Telugu-language film released in 2021.",
-                "Places": "Check, Virginia is a location and is not relevant for checking bank balances.",
-                "Music": "The song 'Check' by Meek Mill and the song 'Check' by Young Thug are not about checking bank balances.",
-                "Patterns": "The check pattern, also known as a chequered pattern, is a pattern of squares, but it does not involve checking bank balances."
-                }
-        },
         {
             "query": "How does a company's check influence its growth?",
             "polyseme": "check",
@@ -819,19 +298,6 @@
     ],
     [
         {
-            "query": "What are the different types of circuits?",
-            "polyseme": "circuit",
-            "answer": {
-                "Science and technology": "There are various types of circuits in electrical engineering, such as analog circuits, digital circuits, integrated circuits, printed circuit boards, etc.",
-                "Mathematics and computer science": "In computer theory, a circuit can refer to a theoretical structure simulating electrical and data paths, or a Boolean circuit used in digital logic circuits.",
-                "Neuroscience": "In neuroscience, a circuit can refer to a biological neural network. In physics, a magnetic circuit refers to one or more closed loop paths containing a magnetic flux.",
-                "Arts, entertainment, and media": "In the film industry, 'Circuit' is a 2001 gay-themed film set in the world of gay circuit parties. In the Power Rangers series, 'Circuit' is a character from Power Rangers Time Force.",
-                "Church": "In the Lutheran Church\u2013Missouri Synod, a circuit is a local grouping of congregations. In Methodism, a circuit is a form of church governance.",
-                "Government and law": "In East Asia, a circuit is an administrative country subdivision. In common law jurisdictions, a circuit court is a name given to court systems.",
-                "Sports": "In sports, circuit training is a form of high-intensity aerobics. In tennis, the ITF Pro Circuit consists of pro tennis tours organized by the International Tennis Federation."
-            }
-        },
-        {
             "query": "How can I improve my performance in the circuit?",
             "polyseme": "circuit",
             "answer": {
@@ -842,25 +308,6 @@
         }
     ],
     [
-        {
-            "query": "What are the different meanings of the word 'class'?",
-            "polyseme": "class",
-            "answer": {
-                "Biology": "In biology, 'class' is a taxonomic rank used to classify organisms below the phylum and above the order.",
-                "Knowledge Representation": "In knowledge representation, 'class' refers to a collection of individuals or objects that share common characteristics or attributes.",
-                "Philosophy": "In philosophy, 'class' is an analytical concept used to categorize entities based on their shared properties, distinct from group phenomena like 'types' or 'kinds'.",
-                "Set Theory": "In set theory, 'class' is a collection of sets that can be precisely defined by a property shared by all its members.",
-                "Hazard Classification": "In hazard classification, 'class' is used to categorize dangerous goods based on their level of risk and potential harm.",
-                "Social Class": "In sociology, 'social class' refers to the hierarchical arrangement of individuals in society based on factors like wealth, occupation, and social status.",
-                "Arts and Entertainment": "In arts and entertainment, 'class' can refer to a song, a character class in role-playing games, or a radio station.",
-                "Films": "In the context of films, 'class' can refer to specific movie titles like 'Class' (1983), 'The Class' (2007), or 'The Class' (2008).",
-                "Television": "In television, 'class' can refer to TV series like 'Class' (2010), 'Class' (2016), or 'The Class'.",
-                "Literature": "In literature, 'class' can refer to books like 'Class: A Guide Through the American Status System' by Paul Fussell or novels titled 'Class' by Pacifico, Rosenfeld, or Segal.",
-                "Computing": "In computing, 'class' is a fundamental concept in object-oriented programming, a group in the warez scene, a data type in C++, a feature in HTML, a construct in computational complexity theory, a Java bytecode file, a pseudo-class in CSS, or a type system construct supporting polymorphism.",
-                "Education": "In education, 'class' can refer to a group of students attending a specific course or lesson, a course itself, a lesson or course session, or a physical classroom.",
-                "Law and Government": "In law and government, 'class' can refer to a group of people involved in a class action lawsuit or the schedules of elections for United States senators."
-            }
-        },
         {
             "query": "What is the definition of a class?",
             "polyseme": "class",
@@ -874,30 +321,15 @@
             }
         },
         {
-            "query": "What are the different meanings of the word 'class'?",
+            "query": "What are the advantages of a class?",
             "polyseme": "class",
             "answer": {
-                "Education": "In the field of education, a class refers to a group of students taught together by a teacher in a specific subject or course.",
-                "Sociology": "In sociology, class refers to the divisions of society based on economic and social status.",
-                "Programming": "In programming, a class is a blueprint for creating objects, defining their attributes and methods.",
-                "Transportation": "In transportation, class refers to the level of service and amenities provided on a vehicle, such as first class or economy class in airlines.",
-                "Mathematics": "In mathematics, class can refer to a set of objects or elements that can be grouped together based on certain properties or characteristics."
+                "Computer science": "In computer science, a class provides encapsulation, inheritance, and abstraction, which enhances code maintainability, efficiency, and complexity management.",
+                "Education": "In education, a class offers a structured learning environment, encourages collaboration, and supports diverse teaching strategies to accommodate different learning styles."
             }
         }
     ],
     [
-        {
-            "query": "What are the different meanings of the word 'clean'?",
-            "polyseme": "clean",
-            "answer": {
-                "Cleaning": "Cleaning refers to the process of removing dirt, impurities, and unwanted substances from an object or environment. It involves activities such as sweeping, mopping, dusting, and disinfecting.",
-                "Music": "In the context of music, 'clean' can refer to albums or songs that are free from explicit or offensive content. It can also describe a specific sound or style of vocals.",
-                "Film": "In film, 'clean' can refer to a genre or style of comedy that avoids profanity and objectionable material. It can also be the title of a movie, such as the 2004 French drama film 'Clean'.",
-                "Sports": "In weightlifting, 'clean' refers to a specific movement called the clean and jerk. It is a two-part lift where the barbell is lifted from the floor to the shoulders and then overhead.",
-                "Rock Climbing": "In rock climbing, 'clean climbing' refers to the practice of using non-destructive hardware and techniques. It involves minimizing the impact on the rock and leaving no trace behind.",
-                "Python Programming": "In Python programming, 'clean' can refer to writing code that is well-organized, readable, and follows best practices. It emphasizes code clarity and maintainability."
-            }
-        },
         {
             "query": "What are some effective methods for clean?",
             "polyseme": "clean",
@@ -918,8 +350,17 @@
                 "Biology": "In biology, complex can refer to a group of associated polypeptide chains forming a protein complex, or a cluster of very similar species difficult to delimit known as a species complex.",
                 "Chemistry": "In chemistry, complex can refer to a central atom or ion surrounded by a surrounding array of bound molecules or ions, or a coordination complex with multiple bonds.",
                 "Geology": "In geology, complex can refer to a unit of rocks composed of two or three types of rocks, or a group of volcanoes known as a volcanic complex.",
-                "Arts": "In arts and entertainment, complex can refer to a Japanese rock band, a 1971 album by the English band Complex, or a publisher of the online magazine Complex.",
                 "Computer Science": "In computer science, complex can refer to a complex number, an element of a field of sets, or an algebraic structure known as a chain complex."
+            }
+        }
+    ],
+    [
+        {
+            "query": "How does implementing a 'cluster' benefit an organization?",
+            "polyseme": "cluster",
+            "answer": {
+                "Computer Science": "In computer science, a 'cluster' improves system performance, reliability, and scalability by distributing tasks across multiple servers or computers.",
+                "Business": "In business management, a 'cluster' within an organization enhances collaboration, innovation, and efficiency by grouping related departments or teams to work closely together."
             }
         }
     ],
@@ -929,42 +370,9 @@
             "polyseme": "compound",
             "answer": {
                 "Architecture and built environments": "Compound (enclosure), a cluster of buildings having a shared purpose, usually inside a fence or wall",
-                "Government and law": "Composition (fine), a legal procedure in use after the English Civil War",
                 "Linguistics": "Compound (linguistics), a word that consists of more than one radical element",
                 "Science, technology, and mathematics": "Biology and medicine: Compounding, the mixing of drugs in pharmacy",
-                "Chemistry and materials science": "Chemical compound, combination of two or more elements",
-                "Vehicles and engines": "Compound engine, a steam engine in which steam is expanded through a series of two or three cylinders before exhaust"
-            }
-        },
-        {
-            "query": "What is a compound structure?",
-            "polyseme": "compound",
-            "answer": {
-                "Architecture and built environments": "A compound structure refers to a cluster of buildings within a shared boundary that serve a common purpose, such as a residential complex with multiple housing units.",
-                "Government and law": "In the context of government and law, a compound structure could refer to an institution or organization composed of multiple committees or bodies working together towards a common goal.",
-                "Linguistics": "A compound structure in linguistics refers to a word or phrase that is formed by combining two or more separate words or morphemes.",
-                "Science, technology, and mathematics": "In materials science, a compound structure can refer to a composite material composed of two or more different substances, such as a fiberglass compound structure.",
-                "Chemistry and materials science": "A compound structure in chemistry refers to a molecule or a molecular structure composed of different elements or atoms bonded together in a specific arrangement.",
-                "Vehicles and engines": "In the context of vehicles and engines, a compound structure could be a design of an engine where steam or exhaust gases are expanded through a series of multiple cylinders before being released."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'compound'?",
-            "polyseme": "compound",
-            "answer": {
-                "Architecture and Built Environments": "A compound can refer to a cluster of buildings with a shared purpose, such as a migrant labor hostel in South Africa.",
-                "Linguistics": "In linguistics, a compound is a word made up of multiple radical elements, such as 'blackboard' or 'firefighter'.",
-                "Chemistry and Materials Science": "In chemistry, a compound is a combination of two or more elements, such as water (H2O) or carbon dioxide (CO2)."
-            }
-        },
-        {
-            "query": "What are the different meanings of the word 'compound'?",
-            "polyseme": "compound",
-            "answer": {
-                "Chemistry": "In chemistry, a compound is a substance made up of two or more different elements chemically bonded together.",
-                "Finance": "In finance, a compound is a financial instrument that combines multiple assets or securities into a single investment.",
-                "Grammar": "In grammar, a compound is a word formed by combining two or more words to create a new word with a different meaning.",
-                "Real Estate": "In real estate, a compound refers to a group of buildings or structures located on the same piece of land."
+                "Chemistry and materials science": "Chemical compound, combination of two or more elements"
             }
         },
         {
@@ -989,17 +397,6 @@
                 "Physics": "In physics, a conductor is a material or substance that allows the flow of electrical current. It has low electrical resistance and high electrical conductivity.",
                 "Mathematics": "In mathematics, the conductor of an abelian variety is a measure of its complexity and is related to the behavior of its L-functions. It is a concept used in algebraic number theory and arithmetic geometry."
             }
-        },
-        {
-            "query": "What are some properties of a conductor?",
-            "polyseme": "conductor",
-            "answer": {
-                "Physics": "A conductor is a material that allows the flow of electric current.",
-                "Music": "In music, a conductor is a person who leads and directs a musical ensemble.",
-                "Mathematics": "In ring theory, the conductor of a ring is a measure of how ramified the ring is as an extension of another ring.",
-                "Geography": "A conductor can also refer to a train conductor who is responsible for collecting tickets and managing passengers on a train.",
-                "Engineering": "In electrical engineering, a conductor is a material that has low resistance and is commonly used to transmit electricity."
-            }
         }
     ],
     [
@@ -1010,68 +407,30 @@
                 "Computing and video games": "A console is a physical device or user interface used to operate a computer, such as a system console, virtual console, command-line interface, or terminal emulator. It can also refer to specific devices for playing video games, such as a video game console, home video game console, or handheld game console.",
                 "Music": "In music, a console can refer to a mixing console, which is a device used for controlling and combining audio signals. It can also refer to an organ console, which includes the keys, stops, and foot pedals for playing music."
             }
-        },
-        {
-            "query": "What are some common uses of the word 'console'?",
-            "polyseme": "console",
-            "answer": {
-                "Video Games": "In the context of video games, a console refers to a dedicated gaming device such as the PlayStation or Xbox.",
-                "Technology": "In technology, a console often refers to a command-line interface or a device used for controlling and managing electronic devices.",
-                "Furniture": "A console can also refer to a type of furniture, typically a table or cabinet, designed to be placed against a wall."
-            }
         }
     ],
     [
         {
-            "query": "What are the different types of control in management?",
+            "query": "What is the definition of control?",
             "polyseme": "control",
             "answer": {
                 "Economics and business": "Control in management refers to the process of monitoring and regulating organizational activities to ensure they are aligned with the goals and objectives of the organization. It includes various types of control such as financial control, operational control, strategic control, and quality control.",
                 "Mathematics and science": "In the context of optimal control theory, control refers to a variable that is manipulated to steer a controllable system towards a desired goal. In statistics, controlling for a variable means taking it into account to minimize its impact on the relationship between other variables. Control variables are also used in experiments to keep certain factors constant.",
                 "Medicine": "In the medical field, control can refer to the process of stopping or attempting to stop post-procedural bleeding. It can also be the name of certain medications like chlordiazepoxide and lorazepam, which are used for anxiety and other conditions.",
                 "Systems engineering, computing and technology": "Control in this context can refer to various aspects such as control engineering, which involves modeling and controlling systems, control systems that enable the control of mechanical or chemical equipment, control theory which is a mathematical theory about controlling dynamical systems, and control flow which specifies the sequence of operations in computer programs.",
-                "Society, psychology and sociology": "Control in psychology can refer to various concepts such as locus of control, which is the extent to which individuals believe they can control events that affect them, self-control which is the ability to control one's emotions and desires, and social control which refers to mechanisms that regulate social behavior.",
-                "Other basic uses": "In orienteering and related sports, control refers to a marked waypoint. In linguistics, control is a relation between elements of two clauses.",
-                "Geography": "Control can also refer to a place called Control in Alberta, Canada.",
-                "Books": "Control is the title of a novel by William Goldman and a fictional character in the spy novel Tinker, Tailor, Soldier, Spy.",
-                "Film and TV": "There are several films and TV shows with the title Control, including a film about Joy Division singer Ian Curtis and a character in the TV series Person of Interest.",
-                "Games": "In the game contract bridge, control and control-bid are features of the game. There is also a video game called Control.",
-                "Music": "Control is the name of a character from the rock musical Starlight Express, as well as the title of albums by artists such as Janet Jackson, Pedro the Lion, and SZA."
+                "Society, psychology and sociology": "Control in psychology can refer to various concepts such as locus of control, which is the extent to which individuals believe they can control events that affect them, self-control which is the ability to control one's emotions and desires, and social control which refers to mechanisms that regulate social behavior."
+            }
+        },
+        {
+            "query": "How does having control benefit a project?",
+            "polyseme": "control",
+            "answer": {
+                "Psychology": "From a psychological perspective, having a sense of 'control' over a project can reduce stress, increase motivation, and lead to better decision-making and overall project success.",
+                "Engineering": "In engineering, having 'control' over a project allows for precise management of processes and parameters, ensuring quality, efficiency, and adherence to specifications."
             }
         }
     ],
     [
-        {
-            "query": "What is the core?",
-            "polyseme": "core",
-            "answer": {
-                "Science and technology": "The core in science and technology can refer to various things such as the central part of a fruit, the signal-carrying portion of an optical fiber, or the central part of a nuclear reactor containing the fuel components.",
-                "Geology and astrophysics": "In geology and astrophysics, the core can refer to the central part of a planet, the inner and outer core of the Earth, or the region of a star where nuclear fusion takes place.",
-                "Computing": "In computing, the core can refer to a data visualization API used in macOS, the recorded state of a running program (core dump), or a family of CPUs released by Intel.",
-                "Mathematics": "In mathematics, the core can refer to the collection of stable allocations in game theory, the homomorphically minimal subgraph in graph theory, or an object in group theory.",
-                "Arts, entertainment and media": "In arts, entertainment, and media, the core can refer to a science fiction novel, a radio station, a video game, or an episode of a cartoon.",
-                "Film and television": "In film and television, the core can refer to a specific film or a programming block on a TV channel.",
-                "Organizations": "In organizations, the core can refer to a defunct American computer and technology corporation, a videogame developer, a Brazilian state police SWAT team, or a non-profit organization providing humanitarian relief.",
-                "Places": "In places, the core can refer to a neighborhood in San Diego or West Virginia in the United States, or various locations in North Carolina, Spain, Canada, or England.",
-                "People": "In people, the core can refer to Earl Lemley Core, a West Virginia botanist, or Ericson Core, an American director and cinematographer."
-            }
-        },
-        {
-            "query": "What are the different meanings of the word 'core'?",
-            "polyseme": "core",
-            "answer": {
-                "Science and technology": "Core (anatomy), everything except the appendages",
-                "Geology and astrophysics": "Core sample, in Earth science, a sample obtained by coring",
-                "Computing": "Core Animation, a data visualization API used in macOS",
-                "Mathematics": "Core (game theory), the collection of stable allocations that no coalition can improve upon",
-                "Arts, entertainment and media": "Core (novel), a 1993 science fiction novel by Paul Preuss",
-                "Film and television": "The Core, a 2003 science fiction film",
-                "Music": "Core (Stone Temple Pilots album), 1992",
-                "Organizations": "Congress of Racial Equality, United States civil rights organization",
-                "Places": "Core, San Diego, a neighborhood in California",
-                "People": "Ericson Core, American director and cinematographer"
-            }
-        },
         {
             "query": "How does the core of a system impact its performance",
             "polyseme": "core",
@@ -1083,49 +442,7 @@
     ],
     [
         {
-            "query": "What are the different meanings of the word 'corner'?",
-            "polyseme": "corner",
-            "answer": {
-                "People": "Corner is a surname, commonly found in English-speaking countries.",
-                "Places": "Corner can refer to various locations such as Corner, Alabama in the United States or Corner Inlet in Victoria, Australia.",
-                "Music": "The Corner is the title of an album by the Hieroglyphics and a song by Common.",
-                "Arts, Entertainment, and Media": "The Corner is a blog from National Review and a TV series based on a book by David Simon & Ed Burns.",
-                "Sports": "Corner kick is a method of restarting play in association football, and cornerback is a position in American and Canadian football."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'corner'?",
-            "polyseme": "corner",
-            "answer": {
-                "Architecture": "In architecture, a corner refers to the intersection of two walls or surfaces in a building. Corners can be designed to create visual interest or be reinforced for structural stability.",
-                "Sports": "In sports, a corner refers to a specific area of the field or court where certain actions or plays take place, such as a corner kick in soccer or a corner three-pointer in basketball.",
-                "Business": "In business, the term 'corner' is often used in the context of market dominance or control. For example, a company may strive to corner the market on a certain product or service.",
-                "Driving": "In driving, the term 'corner' refers to the act of navigating a turn or bend in the road. Proper cornering technique is important for maintaining control and ensuring safety while driving.",
-                "Cooking": "In cooking, the term 'corner' can refer to a specific area of a dish or recipe. For example, a recipe may call for adding ingredients to one corner of a pan or plate.",
-                "Trigonometry": "In trigonometry, a corner refers to the vertex of an angle. The measurement and properties of angles are important in various trigonometric calculations and equations."
-            }
-        }
-    ],
-    [
-        {
-            "query": "What is the function of corpus in linguistics?",
-            "polyseme": "corpus",
-            "answer": {
-                "Linguistics": "In linguistics, a corpus is a large and structured set of texts that is used for linguistic analysis and research. It provides a representative sample of language usage and helps in studying various linguistic phenomena.",
-                "Medicine": "In medicine, the term 'corpus' refers to different anatomical structures such as the corpus callosum, corpus cavernosum, and corpus luteum. It does not have a specific function in the field of linguistics."
-            }
-        },
-        {
-            "query": "What are the different meanings of 'corpus'?",
-            "polyseme": "corpus",
-            "answer": {
-                "Linguistics": "In linguistics, a 'corpus' refers to a large and structured set of texts used for language analysis and research.",
-                "Music": "In music, 'corpus' can refer to an album titled 'Corpus' by Sebastian Santa Maria or a band called Corpus Delicti.",
-                "Medicine": "In medicine, 'corpus' can refer to various anatomical structures such as the corpus callosum, corpus cavernosum, corpus luteum, corpus alibicans, etc."
-            }
-        },
-        {
-            "query": "What are some common uses of 'corpus'?",
+            "query": "What is the meanings of 'corpus'?",
             "polyseme": "corpus",
             "answer": {
                 "Linguistics": "In linguistics, a corpus refers to a collection of texts or spoken language data that is used for language analysis and research.",
@@ -1137,22 +454,7 @@
     ],
     [
         {
-            "query": "What are the different meanings of the word 'crack'?",
-            "polyseme": "crack",
-            "answer": {
-                "Fracture": "Crack, a fracture in a body",
-                "Geology": "Crack, a fracture in a rock",
-                "Drug": "Crack, short for crack cocaine",
-                "Film": "Cracks (film), a 2009 independent thriller",
-                "Music": "Crack (band), a Spanish progressive rock group",
-                "Magazine": "Crack Magazine, a UK-based European music and culture monthly",
-                "Slang": "Crack, carrack",
-                "Safe Cracking": "Safe cracking, the process of opening a safe without the combination or the key",
-                "Software": "Crack (password software), a UNIX/Linux password hacking program for systems administrators"
-            }
-        },
-        {
-            "query": "What are the different meanings of 'crack'?",
+            "query": "What is the definition of 'crack'?",
             "polyseme": "crack",
             "answer": {
                 "Technology": "In technology, a 'crack' can refer to a software crack, which is a modified version of a software program that allows it to be used without purchasing a valid license.",
@@ -1164,7 +466,7 @@
     ],
     [
         {
-            "query": "What are the different types of 'crane'?",
+            "query": "What is the meaning of 'crane'?",
             "polyseme": "crane",
             "answer": {
                 "Construction": "The mobile crane is a common type of crane used in construction to lift heavy materials and equipment.",
@@ -1181,60 +483,20 @@
                 "Computer science": "In computer science, a crash typically refers to a sudden and unexpected system failure, disrupting normal operations and potentially causing data loss.",
                 "Automotive engineering": "From an automotive engineering perspective, a crash refers to a collision, which can result in varying degrees of vehicle damage and potential injuries to occupants."
             }
-        },
-        {
-            "query": "What are some common causes of a 'crash'?",
-            "polyseme": "crash",
-            "answer": {
-                "Technology": "In technology, a crash refers to a sudden failure or malfunction of a software program or system. Common causes of a software crash include bugs, memory leaks, or hardware issues.",
-                "Transportation": "In transportation, a crash refers to a collision or accident involving vehicles. Common causes of a vehicle crash include distracted driving, speeding, or impaired driving.",
-                "Finance": "In finance, a crash refers to a sudden and significant decline in the value of financial markets or assets. Common causes of a market crash include economic downturns, speculative bubbles, or geopolitical events."
-            }
         }
     ],
     [
         {
-            "query": "What are some common uses of the word 'criterion'?",
-            "polyseme": "criterion",
-            "answer": {
-                "General": "Criterion Place is a proposed skyscraper in West Yorkshire, England.",
-                "Science and Mathematics": "Euler's criterion is used in number theory concerning primes.",
-                "Publishing": "The Criterion (American magazine) was a New York-based literary magazine published from 1896 to 1905.",
-                "Entertainment": "The Criterion Collection produces collector's edition DVDs and Blu-ray discs."
-            }
-        },
-        {
-            "query": "What are the different ways in which 'criterion' is used?",
+            "query": "What is the definition of 'criterion'?",
             "polyseme": "criterion",
             "answer": {
                 "Education": "In education, 'criterion-referenced assessment' refers to an evaluation method where student performance is measured against a set of predetermined criteria or standards.",
                 "Statistics": "In statistics, a 'criterion' is a rule or condition used to make decisions in hypothesis testing or data analysis.",
-                "Film Criticism": "In film criticism, one 'criterion' for evaluating a movie's quality is its ability to engage and captivate the audience.",
                 "Project Management": "In project management, a 'criterion' is a specific measurable factor used to evaluate the success or completion of a project."
             }
         }
     ],
     [
-        {
-            "query": "What is the current?",
-            "polyseme": "current",
-            "answer": {
-                "Science and technology": "Current (fluid), the flow of a liquid or a gas",
-                "Arts and entertainment": "Currents (band), an American metal band",
-                "Film, television and radio": "Current TV, a defunct television channel in the US",
-                "Publications": "Current (newspaper), an American trade journal"
-            }
-        },
-        {
-            "query": "What are the different types of 'current'?",
-            "polyseme": "current",
-            "answer": {
-                "Science and technology": "Current (fluid), the flow of a liquid or a gas",
-                "Arts and entertainment": "Currents (band), an American metal band",
-                "Film, television and radio": "Current TV, a defunct television channel in the US",
-                "Publications": "Current (newspaper), an American trade journal"
-            }
-        },
         {
             "query": "Which units are employed to measure current?",
             "polyseme": "current",
@@ -1246,18 +508,7 @@
     ],
     [
         {
-            "query": "What is the meaning of 'cycle'?",
-            "polyseme": "cycle",
-            "answer": {
-                "Anthropology and social sciences": "Cyclic history is a theory of history that proposes that events and patterns in history repeat themselves in cycles.",
-                "Arts, entertainment, and media": "Cycle (2008 film) is a Malayalam film that revolves around the life of a cyclist.",
-                "Literature": "A literary cycle is a series of stories or poems that share a common theme or characters.",
-                "Music": "In music, a cycle refers to a set of musical pieces that are meant to be performed together.",
-                "Computing": "Cycles is a render engine software used for animation and visual effects in the field of computer graphics."
-            }
-        },
-        {
-            "query": "What are the various applications of the word 'cycle'?",
+            "query": "What is the applications of cycle?",
             "polyseme": "cycle",
             "answer": {
                 "Biology": "In biology, the term 'cycle' refers to biological processes such as the cell cycle and the menstrual cycle.",
@@ -1268,18 +519,7 @@
     ],
     [
         {
-            "query": "What are the different types of dates?",
-            "polyseme": "date",
-            "answer": {
-                "Date (fruit)": "The Medjool date is a popular type of date fruit known for its large size and sweet taste.",
-                "Social activity": "A blind date is a type of date where two people are set up to meet for the first time.",
-                "Chronology": "A Julian date is a type of date used in astronomy to indicate the number of days since January 1, 4713 BC.",
-                "Arts, entertainment and media": "The movie 'Due Date' is a comedy film starring Robert Downey Jr. and Zach Galifianakis.",
-                "Places": "Date, Hokkaido is a city in Japan known for its beautiful landscapes and hot springs."
-            }
-        },
-        {
-            "query": "What are some common uses of the word 'date'?",
+            "query": "What is the use of the word 'date'?",
             "polyseme": "date",
             "answer": {
                 "Calendar": "In the context of a calendar, a date is a specific day, month, and year.",
@@ -1295,9 +535,7 @@
             "answer": {
                 "Buildings and structures": "A deck in the context of buildings and structures refers to an outdoor floor attached to a building made of wood or wood-like material.",
                 "Transportation": "In transportation, a deck can refer to the number of passenger levels on a bus.",
-                "Maritime": "In maritime terms, a deck is a floor of a ship.",
-                "Audiovisual equipment": "In the context of audiovisual equipment, a deck can refer to a cassette deck, which is a type of tape machine for playing and recording compact cassettes.",
-                "People": "Deck can also be a surname, such as the surname 'Deck'."
+                "Maritime": "In maritime terms, a deck is a floor of a ship."
             }
         },
         {
@@ -1312,16 +550,6 @@
     ],
     [
         {
-            "query": "What are the different methods of deduction?",
-            "polyseme": "deduction",
-            "answer": {
-                "Philosophy": "In philosophy, deduction refers to deductive reasoning, which is the process of drawing logical conclusions based on given premises.",
-                "Law": "In law, deduction can refer to the reasoning process used to arrive at a legal conclusion or judgment.",
-                "Accounting": "In accounting, deduction can refer to the process of subtracting expenses or discounts from the total revenue to calculate the net income.",
-                "Taxation": "In taxation, deduction can refer to specific expenses or credits that can be subtracted from taxable income to reduce the tax liability."
-            }
-        },
-        {
             "query": "What is the process of making a deduction?",
             "polyseme": "deduction",
             "answer": {
@@ -1329,31 +557,6 @@
                 "Taxation": "Tax deduction is the process of subtracting eligible expenses from gross income to reduce the amount of taxes owed.",
                 "Mathematics": "Mathematical deduction is the process of using logical reasoning and mathematical principles to prove a statement or theorem.",
                 "Law": "Legal deduction is the process of drawing conclusions from evidence and applying them to a legal case to reach a verdict."
-            }
-        },
-        {
-            "query": "What are some key principles of 'deduction'?",
-            "polyseme": "deduction",
-            "answer": {
-                "Logic and Reasoning": "In logic and reasoning, deduction is the process of reaching a conclusion based on given premises and established rules of inference.",
-                "Finance and Accounting": "In finance and accounting, deduction refers to the subtraction of expenses or losses from income, resulting in a reduced taxable income.",
-                "Law": "In law, deduction is the process of drawing a conclusion by applying general principles to specific cases based on evidence and legal rules."
-            }
-        }
-    ],
-    [
-        {
-            "query": "What is the depth of a well?",
-            "polyseme": "depth",
-            "answer": {
-                "Science and mathematics": "Depth in a well refers to the measurement between two points in an oil well, typically measured in feet or meters.",
-                "Geology": "In geology, the depth of a well refers to the distance from the surface to the bottom of the well, which is important for understanding the geological formations and structures.",
-                "Civil Engineering": "In civil engineering, the depth of a well refers to the vertical distance from the ground surface to the water table, which is crucial for determining the availability of groundwater.",
-                "Environmental Science": "In environmental science, the depth of a well is the measurement from the ground surface to the depth at which groundwater is sampled for analysis, providing insights into water quality and contamination.",
-                "Oil and Gas Industry": "In the oil and gas industry, the depth of a well refers to the vertical distance from the drilling rig to the target reservoir, which helps in determining the drilling strategy and estimating the cost of extraction.",
-                "Mining": "In mining, the depth of a well refers to the vertical distance from the surface to the bottom of a mine shaft, which is important for understanding the depth of the ore body and planning mining operations.",
-                "Archaeology": "In archaeology, the depth of a well refers to the vertical distance from the ground surface to the bottom of a well structure, providing insights into ancient water management systems and human settlements.",
-                "Construction": "In construction, the depth of a well refers to the vertical distance from the ground surface to the bottom of a foundation or excavation, which is crucial for ensuring structural stability and preventing soil collapse."
             }
         }
     ],
@@ -1369,15 +572,6 @@
     ],
     [
         {
-            "query": "What are some common uses of the word 'development'?",
-            "polyseme": "development",
-            "answer": {
-                "Business": "Business development is a common use of the word, referring to the process of growing a business.",
-                "Biology and Medicine": "Developmental biology is another common use of the word, referring to the study of how organisms grow and develop.",
-                "Computing": "Software development is a common use of the word, referring to the process of creating a software product."
-            }
-        },
-        {
             "query": "What are some key factors for successful development?",
             "polyseme": "development",
             "answer": {
@@ -1389,20 +583,12 @@
     ],
     [
         {
-            "query": "What are the different meanings of 'dial'?",
+            "query": "How can I adjust the dial to improve the performance of my equipment?",
             "polyseme": "dial",
             "answer": {
-                "Mechanical device": "A 'dial' refers to a rotary device used for inputting numbers in telephones and similar devices.",
-                "DIAL (acronym)": "In the context of digital technology, 'DIAL' stands for Digital Impact Alliance."
-            }
-        },
-        {
-            "query": "What should you be cautious of when using a buffer?",
-            "polyseme": "dial",
-            "answer": {
-                "Chemistry": "When using a buffer in chemistry, one should be cautious of the pH level and the concentration of the buffer solution.",
-                "Computer Science": "When using a buffer in computer science, one should be cautious of buffer overflows, which can lead to security vulnerabilities.",
-                "Geography": "When using a buffer in geography, one should be cautious of the buffer zone, which is an area of land that serves as a protective barrier between two different areas."
+                "Engineering": "To optimize the performance of your equipment, you can adjust the dial that controls the input/output levels. Experiment with different settings to find the sweet spot.",
+                "Fashion": "When designing a garment, the dial can refer to a decorative element such as a large button or ornamental knob. Incorporating a unique dial can add an interesting detail to the clothing piece.",
+                "Telecommunications": "In telecommunications, a dial is a device or interface used to input numerical or alphabetical information into a system. Make sure the dial is properly calibrated and functional for accurate data entry."
             }
         }
     ],
@@ -1419,13 +605,12 @@
             }
         },
         {
-            "query": "What are the different meanings of the word 'domain'?",
+            "query": "What is the domain of a function?",
             "polyseme": "domain",
             "answer": {
-                "Technology": "In technology, a domain refers to a website's unique address on the internet, such as 'www.example.com'.",
-                "Mathematics": "In mathematics, a domain refers to the set of input values for which a function or equation is defined.",
-                "Business": "In the business world, a domain can refer to a specific area or industry in which a company operates or has expertise.",
-                "Psychology": "In psychology, a domain refers to a specific area or aspect of human behavior or functioning that is studied or analyzed."
+                "Mathematics": "In mathematics, the domain of a function is the set of input values for which the function is defined. It represents the possible values that can be input into the function to produce an output.",
+                "Information Technology": "In information technology, 'domain' is also used in the context of administrative domain, broadcast domain, collision domain, domain name, and application domain.",
+                "Science": "In science, the term 'domain' is used in various contexts such as biology (taxonomic subdivision, protein domain), physics (magnetic domain, high-field domain), and sociology (social domain)."
             }
         }
     ]

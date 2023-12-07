@@ -8,6 +8,7 @@ from eval import *
 import os
 import copy
 import time
+import wikipediaapi
 
 
 parser = argparse.ArgumentParser()
@@ -16,11 +17,34 @@ parser.add_argument('--eval_mode', type=bool, default=True)
 parser.add_argument('--pred_filepath', type=str, default='./data/predictions/')
 parser.add_argument('--gt_filepath', type=str, default='./data/gt.json')    
 parser.add_argument('--format', default='json', choices=['txt', 'json'])
-parser.add_argument('--model', type=str, default='all', choices=['all','perir','general','literal'])
+parser.add_argument('--model', type=str, default='all', choices=['all','perir','general','literal','perir_wiki'])
 parser.add_argument('--toy', default=None)
 parser.add_argument('--metric', default='all', choices=['all', 'bertscore', 'bleu', 'meteor', 'rouge', 'google_bleu'])
 parser.add_argument('--save_scores', default=True)
+parser.add_argument('--openai_key', default=None, choices=['sj','gc','sy','mh','jk','mh2'])
 args = parser.parse_args()
+
+def wiki_crawl(polyseme):
+    wiki = wikipediaapi.Wikipedia('polyseme_crawling','en')
+    wiki_wiki = wikipediaapi.Wikipedia(
+    user_agent='polyseme_crawling',
+        language='en',
+        extract_format=wikipediaapi.ExtractFormat.WIKI
+    )
+    page_py = wiki_wiki.page(polyseme)
+    if page_py.exists():
+        if 'Category:Disambiguation pages' in page_py.categories:
+            tmp = page_py.text
+            list = tmp.split('\n\n')
+            list = list[1:-2]
+            return list
+        else:
+            print("{} not a polyseme".format(polyseme))
+            return [polyseme]
+    else:
+        print("{} not in wikipedia".format(polyseme))
+        return [polyseme]   
+
 
 def summarizer(user_reddit, llm):
     
@@ -60,7 +84,7 @@ def summarizer(user_reddit, llm):
 def answerer(summary, query, llm):
 
     problem_def = "Based on the user's interest given as following:\n\n"
-    role = "Answer the following question:\n"
+    role = "Answer the following question in the area the user is interested in.\n"
     condition = "Tell me briefly within two sentences. Make sure the answer is related to the interest of the user.\n\nAnswer:"
     prompt = problem_def + summary + '\n\n' + role + query + '\n\n' + condition
 
@@ -90,6 +114,41 @@ def answerer(summary, query, llm):
         return answer
 
 
+def answerer_with_wiki(summary, query, llm, wiki_of_polyseme, polyseme):
+
+    problem_def = "Based on the user's interest given as following:\n\n"
+    role = "Answer the following question in the area the user is interested in.\n"
+    condition = "Tell me briefly within two sentences. Make sure the answer is related to the interest of the user.\n\nAnswer:"
+    wiki_condition = "{} can have a diverse meaning across interests as following:\n".format(polyseme)
+    wiki = '\n- '.join(wiki_of_polyseme)
+    prompt = wiki_condition + wiki + problem_def + summary + '\n\n' + role + query + '\n\n' + condition
+
+    if args.toy == '1':
+        return "answer"
+    else:
+        error_iter = 0
+
+        while True:
+            error_iter += 1
+            try:
+                response = openai.ChatCompletion.create(
+                    model=llm,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature = 0
+                )
+                answer = response['choices'][0]['message']['content']
+                break
+            except:
+                if error_iter > 10:
+                    answer = ""
+                    print("Answerer: Too much time out error")
+                    break
+                else:
+                    continue
+        
+        return answer
+    
+
 def general(query, llm): # model that only uses query
     
     condition = "Tell me briefly within two sentences."
@@ -102,7 +161,8 @@ def general(query, llm): # model that only uses query
         try:
             response = openai.ChatCompletion.create(
                 model=llm,
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0
             )
             answer = response['choices'][0]['message']['content']    
             break
@@ -129,7 +189,8 @@ def literal(user_reddit, query, llm): # model that uses raw reddit data
         try:
             response = openai.ChatCompletion.create(
                 model=llm,
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0
             )
             answer = response['choices'][0]['message']['content']    
             break
@@ -150,7 +211,7 @@ if __name__ == "__main__":
     start_time = time.time()
 
     openai_keys = []
-    keys_list = ['mh','mh2','sj','gc','sy','js']
+    keys_list = ['mh','jk','sj','gc','sy']
     for key in keys_list:
         key_path = os.path.join('./personal_info/', 'openai_key_'+key+'.txt')
         openai_keys.append(key_path)
@@ -169,11 +230,13 @@ if __name__ == "__main__":
 
     gt_file_path = args.gt_filepath
     interest_file_path = './data/reddit_interest.json'
-    matching_path = "" # './data/subreddit_topic.json'
+    matching_path = './data/subreddit_topic.json'
     gt2topic_path = './data/gt2topic.json'
     if args.toy == '1':
         gt_file_path = './data/gt_toy.json'
-        
+    polyseme_wiki_path = './data/polyseme_wiki.json'
+    with open(polyseme_wiki_path,'r') as f:
+        polyseme_wiki = json.load(f)
     # init save_data (prediction data to save)
     with open(gt_file_path, 'r') as f:
         gt_all = json.load(f)
@@ -183,6 +246,7 @@ if __name__ == "__main__":
             save_data[i]['answer'][k] = []
 
     save_data_perir = copy.deepcopy(save_data)
+    save_data_perir_wiki = copy.deepcopy(save_data)
     save_data_general = copy.deepcopy(save_data)
     save_data_literal = copy.deepcopy(save_data)
 
@@ -217,6 +281,13 @@ if __name__ == "__main__":
                 print("no keys available for now... Please try again tomorrow")
                 exit()
 
+            if args.openai_key:
+                key_pth = os.path.join('./personal_info/', 'openai_key_'+args.openai_key+'.txt')
+                with open(key_pth,'r') as f:
+                    OPENAI_API_KEY = f.readline()
+                openai.api_key = OPENAI_API_KEY
+            # print("openAI key: {}".format(OPENAI_API_KEY))
+
             if i%20==0:
                 print("Inference ... {} Done".format(i/len(dataset)))
             
@@ -239,6 +310,23 @@ if __name__ == "__main__":
                 save_data_perir[batch['index']]['answer'][field].append(pred_perir)
                 with open(os.path.join(args.pred_filepath, "med_perir.json"), 'w') as f:
                     json.dump(save_data_perir, f)
+                # perir_wiki
+                try: 
+                    summary = summary_history[str(user_reddit)]
+                except:
+                    summary = summarizer(user_reddit=user_reddit, llm=llm)
+                    keys_used_dict[api_key] += 1
+                    summary_history[str(user_reddit)] = summary
+                try:
+                    wiki_of_polyseme = polyseme_wiki[batch['polyseme'][0]]
+                except:
+                    wiki_of_polyseme = wiki_crawl(batch['polyseme'][0])
+                
+                pred_perir_wiki = answerer_with_wiki(summary, query, llm=llm, wiki_of_polyseme=wiki_of_polyseme,polyseme=batch['polyseme'][0])
+                keys_used_dict[api_key] += 1
+                save_data_perir_wiki[batch['index']]['answer'][field].append(pred_perir_wiki)
+                with open(os.path.join(args.pred_filepath, "med_perir_wiki.json"), 'w') as f:
+                    json.dump(save_data_perir_wiki, f)
                 # general
                 pred_general = general(query, llm=llm)
                 keys_used_dict[api_key] += 1
@@ -261,6 +349,19 @@ if __name__ == "__main__":
                         summary_history[str(user_reddit)] = summary
                     pred = answerer(summary, query, llm=llm)
                     keys_used_dict[api_key] += 1
+                elif args.model == 'perir_wiki':
+                    try: 
+                        summary = summary_history[str(user_reddit)]
+                    except:
+                        summary = summarizer(user_reddit=user_reddit, llm=llm)
+                        keys_used_dict[api_key] += 1
+                        summary_history[str(user_reddit)] = summary
+                    try:
+                        wiki_of_polyseme = polyseme_wiki[batch['polyseme'][0]]
+                    except:
+                        wiki_of_polyseme = wiki_crawl(batch['polyseme'][0])
+                    pred = answerer_with_wiki(summary, query, llm=llm, wiki_of_polyseme=wiki_of_polyseme,polyseme=batch['polyseme'][0])
+                    keys_used_dict[api_key] += 1
                 elif args.model == 'general':
                     pred = general(query, llm=llm)
                     keys_used_dict[api_key] += 1
@@ -276,7 +377,7 @@ if __name__ == "__main__":
             json.dump(summary_history,f_s)
 
         if args.model == 'all':
-            for model_name in ['perir','general','literal']:
+            for model_name in ['perir','perir_wiki','general','literal']:
                 file_name = "pred_" + model_name + ".json"
                 save_file_path = os.path.join(args.pred_filepath, file_name)
                 with open(save_file_path, 'w') as f:
@@ -304,14 +405,15 @@ if __name__ == "__main__":
                     result_scores[c] = s
                     c,s = eval_google_bleu(pred_sents, gt_sents)
                     result_scores[c] = s
+                    with open(os.path.join('./scores/',args.model+'.json'),'w') as f_s:
+                        json.dump(result_scores, f_s)
                     c,s = eval_gpt(pred_sents, gt_sents)
                     result_scores[c] = s
-
                     with open(os.path.join('./scores/',args.model+'.json'),'w') as f_s:
                         json.dump(result_scores, f_s)
                 
                 else: #if all
-                    for model_name in ['perir','general','literal']:
+                    for model_name in ['perir','perir_wiki','general','literal']:
                         file_name = "pred_" + model_name + ".json"
                         save_file_path = os.path.join(args.pred_filepath, file_name)
 
@@ -343,7 +445,7 @@ if __name__ == "__main__":
                 print_result(eval_meteor(pred_sents, gt_sents))
                 print_result(eval_rouge(pred_sents, gt_sents))
                 print_result(eval_google_bleu(pred_sents, gt_sents))
-                # print_result(eval_gpt(pred_sents, gt_sents))
+                print_result(eval_gpt(pred_sents, gt_sents))
 
     end_time = time.time()
     tot_time = (end_time-start_time)/3600

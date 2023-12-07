@@ -167,15 +167,6 @@
                 "Science and Analysis": "In the field of scientific analysis, the main features of a programming language may include libraries for data manipulation and statistical analysis, as well as support for parallel computing.",
                 "Media": "In media, the main features of a programming language might refer to its suitability for multimedia applications, real-time processing, or interaction with graphical user interfaces."
             }
-        },
-        {
-            "query": "What are some notable representations of the word 'feature'?",
-            "polyseme": "feature",
-            "answer": {
-                "Film and Television": "The film 'The Features' is a notable representation of the word in the context of entertainment.",
-                "Fashion and Beauty": "A prominent fashion feature is the use of bold colors and patterns in clothing and accessories.",
-                "Language and Linguistics": "In linguistics, a feature refers to a distinctive characteristic of a language, such as the use of tones or nasal sounds."
-            }
         }
     ],
     [
@@ -297,7 +288,7 @@
             }
         },
         {
-            "query": "How can I effectively layout a website using a 'grid'?",
+            "query": "How can I effectively layout using a 'grid'?",
             "polyseme": "grid",
             "answer": {
                 "Web Design": "When designing a website, using a grid system can help you create a well-organized layout. Consider using frameworks like Bootstrap or CSS grid to easily set up a grid structure for your website.",
@@ -386,16 +377,6 @@
     ],
     [
         {
-            "query": "What is the purpose of a cryptographic key?",
-            "polyseme": "key",
-            "answer": {
-                "Common uses": "A cryptographic key is a piece of information needed to encode or decode a message in cryptography.",
-                "Technology": "In computing, a cryptographic key is used in encryption and decryption algorithms to securely transmit and store data.",
-                "Music": "In music composition, a cryptographic key can refer to the tonal center or scale used in a piece of music.",
-                "People": "Key, also known as Kim Ki-bum, is a South Korean entertainer and member of the boy band SHINee."
-            }
-        },
-        {
             "query": "What are some important factors to consider when buying a 'key'?",
             "polyseme": "key",
             "answer": {
@@ -439,7 +420,7 @@
             }
         },
         {
-            "query": "How can I create a 'link' between two different websites?",
+            "query": "How can I create a 'link'?",
             "polyseme": "link",
             "answer": {
                 "Web Development": "To create a link between two different websites, you can use HTML anchor tags. Use the href attribute to specify the destination URL and provide appropriate text or an image to represent the link.",
@@ -458,15 +439,6 @@
                 "Adaptation to language, etc.": "Language localization involves translating a product into different languages or adapting it to a specific country or region.",
                 "Mathematics": "Localization of a ring and a module is a formal way to introduce the 'denominators' to a given ring or module in abstract algebra.",
                 "Physics": "Anderson localization is the absence of diffusion of waves in a disordered medium in condensed matter physics."
-            }
-        },
-        {
-            "query": "What is the process of determining the location of an object using radio waves?",
-            "polyseme": "localization",
-            "answer": {
-                "Engineering and technology": "Radiolocation is the process of determining the location of an object using radio waves.",
-                "Physics": "Radiolocation is also used in physics to find the location of something via radio waves.",
-                "Biology": "Radiolocation can also be used in biology to track the movement of animals using radio waves."
             }
         },
         {
@@ -567,7 +539,7 @@
             }
         },
         {
-            "query": "How can I utilize 'medium' to communicate effectively?",
+            "query": "How can I utilize 'medium'?",
             "polyseme": "medium",
             "answer": {
                 "Communication": "To communicate effectively, it is important to choose the appropriate medium for your message. Consider factors such as the urgency of the information, the target audience, and the nature of the message. For example, for quick and informal communication, you can use instant messaging or email. For more formal or important messages, face-to-face meetings or phone calls may be more appropriate.",
@@ -633,15 +605,6 @@
                 "Incidence Structure": "In the field of incidence structures, a 'net' refers to an arrangement of points and parallel classes of lines.",
                 "Operator Algebras": "In the domain of local quantum field theory, 'net' specifically refers to operator algebras.",
                 "Computational Geometry": "In computational geometry, an '\u03b5-net' is a mathematical concept where a general set is approximated by a collection of simpler subsets."
-            }
-        },
-        {
-            "query": "How can I improve the speed and performance of my 'internet connection'?",
-            "polyseme": "net",
-            "answer": {
-                "Technology": "To improve the speed and performance of your internet connection, you can try resetting your modem and router, clearing your browser cache, and running a speed test to identify any network issues.",
-                "Fishing": "When fishing, using a fine mesh net can help catch smaller fish and improve your chances of a successful catch.",
-                "Sports": "In sports like volleyball or tennis, a well-executed net play can put pressure on the opponent and potentially lead to scoring points."
             }
         }
     ],
@@ -832,7 +795,7 @@
             }
         },
         {
-            "query": "What are some important historical events that occurred during the 'period'?",
+            "query": "What are some important events that occurred during the 'period'?",
             "polyseme": "period",
             "answer": {
                 "History": "The Renaissance period, which spanned from the 14th to the 17th century, was a significant time of artistic, cultural, and scientific development in Europe.",
@@ -904,17 +867,6 @@
     ],
     [
         {
-            "query": "What is the plot of the movie?",
-            "polyseme": "plot",
-            "answer": {
-                "Art, media and entertainment": "The plot of the movie refers to the storyline or narrative arc that unfolds throughout the film, including the main events, conflicts, and resolution.",
-                "Music": "The plot of the movie does not have a specific meaning in the context of music.",
-                "Other": "The plot of the movie does not have a specific meaning in the other mentioned fields.",
-                "Graphics": "The plot of the movie does not have a specific meaning in the context of graphics.",
-                "Land": "The plot of the movie does not have a specific meaning in the context of land."
-            }
-        },
-        {
             "query": "What is the definition of 'plot'?",
             "polyseme": "plot",
             "answer": {
@@ -926,7 +878,7 @@
             }
         },
         {
-            "query": "What is the significance of plot in literature?",
+            "query": "What is the significance of plot?",
             "polyseme": "plot",
             "answer": {
                 "Literature": "In literature, plot refers to the sequence of events that make up a story, including the exposition, rising action, climax, falling action, and resolution.",
