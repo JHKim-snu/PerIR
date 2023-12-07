@@ -98,6 +98,20 @@ Data cleaning should be done manually after the query generation.
 
 **4. Collect User Data from Reddit**
 
+Download [TLDR dataset](https://github.com/webis-de/webis-tldr-17-corpus) into the `/data` folder:
+
+```shell
+cd data
+wget https://huggingface.co/datasets/webis/tldr-17/blob/main/data/corpus-webis-tldr-17.zip
+cd ..
+```
+
+Run the following script:
+```shell
+python make_user_interest.py
+```
+
+This code will output an user interest dataset from the Reddit and save the data to `./data/reddit_interest.json`.
 
 
 **5. Match to High-Level Topics**
