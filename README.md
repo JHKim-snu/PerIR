@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>PerIR: Personalized Information Retrieval</h1>
+<h1>PeriOD QA: Personalized Open-Domain Question Answering</h1>
 
 **[Junghyun Kim][1], &nbsp; [Suyeon Shin][2], &nbsp; [Moonhoen Lee][3], &nbsp; [Sujin jeon][4], &nbsp; [Jiseong Chung][5]** <br>
 
